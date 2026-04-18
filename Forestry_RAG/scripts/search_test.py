@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 
-qdrant_path = r"D:\.project\.menu\.exp_llm\ForestryLLM\Forestry_RAG\qdrant_data"
+qdrant_path = r"/root/autodl-tmp/ForestryLLM/Forestry_RAG/scripts/search_test.py"
 collection_name = "forestry_kb"
 
 # 1. 加载模型

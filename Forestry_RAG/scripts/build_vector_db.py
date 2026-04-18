@@ -6,8 +6,8 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 
 # ========= 1. 路径设置 =========
-jsonl_path = Path(r"D:\.project\.menu\.exp_llm\ForestryLLM\Forestry_RAG\data\Forestry_KB_merged_total.jsonl")
-qdrant_path = r"D:\.project\.menu\.exp_llm\ForestryLLM\Forestry_RAG\qdrant_data"
+jsonl_path = Path(r"/root/autodl-tmp/ForestryLLM/Foresty_KB/03_exports/Forestry_KB_merged_total.jsonl")
+qdrant_path = r"/root/autodl-tmp/ForestryLLM/Forestry_RAG/qdrant_data"
 collection_name = "forestry_kb"
 
 # ========= 2. 读取 JSONL =========
