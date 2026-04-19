@@ -43,7 +43,7 @@ if len(records) == 0:
 print("正在加载 embedding 模型...")
 model = SentenceTransformer(
     bge_model_path,
-    device="cpu",
+    device="cuda",
     local_files_only=True
 )
 

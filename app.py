@@ -33,7 +33,7 @@ max_citations = 2   # 最多保留 2 条引用
 print("正在加载本地 embedding 模型...")
 embed_model = SentenceTransformer(
     bge_model_path,
-    device="cpu",
+    device="cuda",
     local_files_only=True
 )
 
