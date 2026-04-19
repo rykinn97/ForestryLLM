@@ -12,7 +12,7 @@ os.environ["TRANSFORMERS_OFFLINE"] = "1"
 # =========================
 # 1. 基本配置
 # =========================
-qdrant_path = "/root/autodl-tmp/ForestryLLM/Forestry_RAG/qdrant_data"   # 改成你的实际路径
+qdrant_path = "/root/autodl-tmp/ForestryLLM/Forestry_KB/qdrant_data"   # 改成你的实际路径
 collection_name = "forestry_kb"
 
 ollama_url = "http://127.0.0.1:11434/api/chat"
