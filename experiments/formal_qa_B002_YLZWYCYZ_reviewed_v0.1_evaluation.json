@@ -1,0 +1,3304 @@
+{
+  "run_id": "20260509T084517Z",
+  "timestamp": "2026-05-09T08:45:17.776775+00:00",
+  "config": "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\configs\\project_config.json",
+  "corpus_version": "v0.1-two-books-internal",
+  "retriever": "lexical_cosine_smoke",
+  "generator": null,
+  "top_k": 8,
+  "threshold": 0.52,
+  "metrics": {
+    "answerable_cases": 40,
+    "unanswerable_cases": 10,
+    "recall_at_8": 0.975,
+    "mrr": 0.8341666666666667,
+    "ndcg": 0.8689765469586661,
+    "rejection_accuracy": 0.9,
+    "citation_hit_rate": 0.975,
+    "answer_support_rate": null,
+    "unsupported_generation_rate": null,
+    "notes": "answer_support_rate and unsupported_generation_rate require human or LLM-judge answer audits and are intentionally not inferred here."
+  },
+  "cases": [
+    {
+      "question": "园林植物细胞的基本特征是什么，细胞膜和细胞壁各有什么功能？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0015"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.7386544964435532,
+          "chunk_id": "M_YLZWYCYZ_V3_0015",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.1 细胞膜和细胞壁-8-9",
+          "chunk_title": "园林植物细胞的基本特征与细胞膜、细胞壁的结构功能"
+        },
+        {
+          "rank": 2,
+          "score": 0.5534601814615663,
+          "chunk_id": "M_LMBLX_V3_0102",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1.1.1 菌物的营养体-18-18",
+          "chunk_title": "菌物菌丝细胞的微观器质结构与细胞壁化学成分"
+        },
+        {
+          "rank": 3,
+          "score": 0.5395376365064628,
+          "chunk_id": "M_YLZWYCYZ_V3_0086",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-54-54",
+          "chunk_title": "细胞质遗传的区别于核遗传的三大核心特点"
+        },
+        {
+          "rank": 4,
+          "score": 0.5180118867824779,
+          "chunk_id": "M_LMBLX_V3_0333",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.2 无细胞壁的植物原核生物-60-60",
+          "chunk_title": "无细胞壁原核生物简介"
+        },
+        {
+          "rank": 5,
+          "score": 0.4987737652260313,
+          "chunk_id": "M_LMBLX_V3_0042",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.2.2 组织上的病变-9-9",
+          "chunk_title": "组织补偿反应中细胞繁殖与组织分化的详细修复过程"
+        },
+        {
+          "rank": 6,
+          "score": 0.4955014475005829,
+          "chunk_id": "M_LMBLX_V3_0391",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.5.3.2 植物病原线虫的致病性-71-72",
+          "chunk_title": "线虫食道腺分泌物引发巨型细胞/合胞体及细胞溶解的生理机制及宏观症状"
+        },
+        {
+          "rank": 7,
+          "score": 0.44524132198184124,
+          "chunk_id": "M_YLZWYCYZ_V3_0027",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.1 有丝分裂-14-15",
+          "chunk_title": "有丝分裂的遗传学意义及无性繁殖的细胞学基础"
+        },
+        {
+          "rank": 8,
+          "score": 0.4429160822423083,
+          "chunk_id": "M_YLZWYCYZ_V3_0016",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.2 细胞质和细胞器-9-9",
+          "chunk_title": "细胞质的组成及四大主要细胞器（线粒体、质体、核糖体、内质网）"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "染色体的基本化学成分和主要遗传功能是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0018"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.7033181986481071,
+          "chunk_id": "M_YLZWYCYZ_V3_0018",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2 染色体-10-10",
+          "chunk_title": "染色体的基本定义、化学成分与主要功能"
+        },
+        {
+          "rank": 2,
+          "score": 0.5612135332663137,
+          "chunk_id": "M_YLZWYCYZ_V3_0037",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.1 DNA是主要的遗传物质-21-21",
+          "chunk_title": "染色体的核心成分与遗传物质的疑问"
+        },
+        {
+          "rank": 3,
+          "score": 0.5333682109222561,
+          "chunk_id": "M_YLZWYCYZ_V3_0006",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "经典遗传学阶段：染色体理论与基因概念的确立"
+        },
+        {
+          "rank": 4,
+          "score": 0.46106142730828475,
+          "chunk_id": "M_YLZWYCYZ_V3_0007",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "现代遗传学阶段：分子遗传学与基因工程的兴起"
+        },
+        {
+          "rank": 5,
+          "score": 0.4585507616027644,
+          "chunk_id": "M_YLZWYCYZ_V3_0027",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.1 有丝分裂-14-15",
+          "chunk_title": "有丝分裂的遗传学意义及无性繁殖的细胞学基础"
+        },
+        {
+          "rank": 6,
+          "score": 0.4554188098199274,
+          "chunk_id": "M_YLZWYCYZ_V3_0152",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.3 花色遗传的实例-97-99",
+          "chunk_title": "花色遗传实例：大丽花（二）——多倍体遗传分离规律与高度复杂的基因互作"
+        },
+        {
+          "rank": 7,
+          "score": 0.4501070536472858,
+          "chunk_id": "M_YLZWYCYZ_V3_0003",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-2-2",
+          "chunk_title": "遗传学的四大核心任务及园林植物遗传学的应用"
+        },
+        {
+          "rank": 8,
+          "score": 0.44582467175827545,
+          "chunk_id": "M_YLZWYCYZ_V3_0101",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.2 染色体数目的变异-75-75",
+          "chunk_title": "染色体数目变异概述及染色体组与染色体基数（x）的概念"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "根据着丝点位置，染色体形态大致可分为哪四种？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0020"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6119099186844182,
+          "chunk_id": "M_YLZWYCYZ_V3_0020",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.1 染色体的形态-11-11",
+          "chunk_title": "基于着丝点位置的四种染色体形态分类"
+        },
+        {
+          "rank": 2,
+          "score": 0.5105512425831545,
+          "chunk_id": "M_YLZWYCYZ_V3_0019",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.1 染色体的形态-10-10",
+          "chunk_title": "染色体的基本形态特征与结构组成（着丝点、缢痕与随体）"
+        },
+        {
+          "rank": 3,
+          "score": 0.42366794592016094,
+          "chunk_id": "M_YLZWYCYZ_V3_0030",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.2 减数分裂-16-17",
+          "chunk_title": "减数分裂第二次分裂（等数）的过程与结果"
+        },
+        {
+          "rank": 4,
+          "score": 0.4202709993025428,
+          "chunk_id": "M_YLZWYCYZ_V3_0024",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.3 染色体的数目与组型-12-13",
+          "chunk_title": "染色体组型分析（核型分析）的定义、特征与鉴定方法"
+        },
+        {
+          "rank": 5,
+          "score": 0.39466042795915207,
+          "chunk_id": "M_YLZWYCYZ_V3_0029",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.2 减数分裂-16-16",
+          "chunk_title": "减数分裂第一次分裂（减数）的全过程详解"
+        },
+        {
+          "rank": 6,
+          "score": 0.3803693613631752,
+          "chunk_id": "M_YLZWYCYZ_V3_0100",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.1 染色体结构的变异-74-74",
+          "chunk_title": "染色体结构变异之易位：概念、类型、细胞学鉴定与遗传效应"
+        },
+        {
+          "rank": 7,
+          "score": 0.3682333022074652,
+          "chunk_id": "M_YLZWYCYZ_V3_0099",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.1 染色体结构的变异-73-74",
+          "chunk_title": "染色体结构变异之倒位：概念、类型、细胞学鉴定与遗传效应"
+        },
+        {
+          "rank": 8,
+          "score": 0.3602323773092323,
+          "chunk_id": "M_YLZWYCYZ_V3_0023",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.3 染色体的数目与组型-12-12",
+          "chunk_title": "染色体数目的相对恒定性与同源染色体的概念"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "常染色质和异染色质在染色特性和遗传活性上有什么差异？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0022"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.7991933366606172,
+          "chunk_id": "M_YLZWYCYZ_V3_0022",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.2 染色体的结构-11-12",
+          "chunk_title": "常染色质与异染色质的染色特性及遗传活性差异"
+        },
+        {
+          "rank": 2,
+          "score": 0.4371359185325515,
+          "chunk_id": "M_YLZWYCYZ_V3_0023",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.3 染色体的数目与组型-12-12",
+          "chunk_title": "染色体数目的相对恒定性与同源染色体的概念"
+        },
+        {
+          "rank": 3,
+          "score": 0.4284548793521089,
+          "chunk_id": "M_YLZWYCYZ_V3_0101",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.2 染色体数目的变异-75-75",
+          "chunk_title": "染色体数目变异概述及染色体组与染色体基数（x）的概念"
+        },
+        {
+          "rank": 4,
+          "score": 0.4209101499497353,
+          "chunk_id": "M_YLZWYCYZ_V3_0037",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.1 DNA是主要的遗传物质-21-21",
+          "chunk_title": "染色体的核心成分与遗传物质的疑问"
+        },
+        {
+          "rank": 5,
+          "score": 0.4202709993025428,
+          "chunk_id": "M_YLZWYCYZ_V3_0024",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.3 染色体的数目与组型-12-13",
+          "chunk_title": "染色体组型分析（核型分析）的定义、特征与鉴定方法"
+        },
+        {
+          "rank": 6,
+          "score": 0.4200966333397805,
+          "chunk_id": "M_YLZWYCYZ_V3_0031",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.2 减数分裂-17-17",
+          "chunk_title": "减数分裂的遗传学意义（稳定性与变异性）"
+        },
+        {
+          "rank": 7,
+          "score": 0.41503455354247504,
+          "chunk_id": "M_YLZWYCYZ_V3_0020",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.1 染色体的形态-11-11",
+          "chunk_title": "基于着丝点位置的四种染色体形态分类"
+        },
+        {
+          "rank": 8,
+          "score": 0.3884227466049727,
+          "chunk_id": "M_YLZWYCYZ_V3_0021",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2.2 染色体的结构-11-11",
+          "chunk_title": "染色体的单线性特征与四级结构学说（核小体到染色体）"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "细胞分裂有哪些主要方式，它们与遗传物质传递有什么关系？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0025"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.4965106353027529,
+          "chunk_id": "M_YLZWYCYZ_V3_0025",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3 细胞分裂-13-13",
+          "chunk_title": "细胞分裂的基础概念与三种主要方式"
+        },
+        {
+          "rank": 2,
+          "score": 0.47795995417390574,
+          "chunk_id": "M_YLZWYCYZ_V3_0084",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-53-53",
+          "chunk_title": "细胞质遗传（核外遗传）的基础概念与别称"
+        },
+        {
+          "rank": 3,
+          "score": 0.4311077863272534,
+          "chunk_id": "M_YLZWYCYZ_V3_0037",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.1 DNA是主要的遗传物质-21-21",
+          "chunk_title": "染色体的核心成分与遗传物质的疑问"
+        },
+        {
+          "rank": 4,
+          "score": 0.4098501813893336,
+          "chunk_id": "M_YLZWYCYZ_V3_0027",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.1 有丝分裂-14-15",
+          "chunk_title": "有丝分裂的遗传学意义及无性繁殖的细胞学基础"
+        },
+        {
+          "rank": 5,
+          "score": 0.36504623310375045,
+          "chunk_id": "M_YLZWYCYZ_V3_0018",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.2 染色体-10-10",
+          "chunk_title": "染色体的基本定义、化学成分与主要功能"
+        },
+        {
+          "rank": 6,
+          "score": 0.36388706091787365,
+          "chunk_id": "M_YLZWYCYZ_V3_0016",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.2 细胞质和细胞器-9-9",
+          "chunk_title": "细胞质的组成及四大主要细胞器（线粒体、质体、核糖体、内质网）"
+        },
+        {
+          "rank": 7,
+          "score": 0.35961410067085864,
+          "chunk_id": "M_YLZWYCYZ_V3_0086",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-54-54",
+          "chunk_title": "细胞质遗传的区别于核遗传的三大核心特点"
+        },
+        {
+          "rank": 8,
+          "score": 0.35541125908382265,
+          "chunk_id": "M_YLZWYCYZ_V3_0087",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.2 细胞质基因与细胞核基因的关系-54-54",
+          "chunk_title": "细胞质基因与细胞核基因在功能结构上的相似性与差异性"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "减数分裂发生在哪里，它的主要特点是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0028"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.46322156842856765,
+          "chunk_id": "M_YLZWYCYZ_V3_0028",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.2 减数分裂-15-15",
+          "chunk_title": "减数分裂的基础定义、发生部位与主要特点"
+        },
+        {
+          "rank": 2,
+          "score": 0.44815553696167215,
+          "chunk_id": "M_YLZWYCYZ_V3_0025",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3 细胞分裂-13-13",
+          "chunk_title": "细胞分裂的基础概念与三种主要方式"
+        },
+        {
+          "rank": 3,
+          "score": 0.37125759826979826,
+          "chunk_id": "M_YLZWYCYZ_V3_0030",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.2 减数分裂-16-17",
+          "chunk_title": "减数分裂第二次分裂（等数）的过程与结果"
+        },
+        {
+          "rank": 4,
+          "score": 0.3298868784131948,
+          "chunk_id": "M_LMBLX_V3_0296",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-52-53",
+          "chunk_title": "数值分类法的“等权”原则与借助计算机客观聚类的优势"
+        },
+        {
+          "rank": 5,
+          "score": 0.3120833373781056,
+          "chunk_id": "M_YLZWYCYZ_V3_0067",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.3 分离规律及其应用-42-43",
+          "chunk_title": "分离规律的概念、实质及其实现的五大条件"
+        },
+        {
+          "rank": 6,
+          "score": 0.30839301041768485,
+          "chunk_id": "M_YLZWYCYZ_V3_0031",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.2 减数分裂-17-17",
+          "chunk_title": "减数分裂的遗传学意义（稳定性与变异性）"
+        },
+        {
+          "rank": 7,
+          "score": 0.29919140591013355,
+          "chunk_id": "M_YLZWYCYZ_V3_0093",
+          "citation_anchor": "园林植物遗传育种（第3版）-数量性状的遗传-4.1.1 数量性状的遗传特征-59-60",
+          "chunk_title": "数量性状的基本遗传特征（正态分布与环境敏感性）及玉米穗长实例"
+        },
+        {
+          "rank": 8,
+          "score": 0.29792346208673287,
+          "chunk_id": "M_YLZWYCYZ_V3_0175",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.4.1 株型的遗传-109-109",
+          "chunk_title": "植物株型的概念、分类依据及顶端优势的激素平衡基础"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "高等植物的两种基本繁殖方式是什么，它们在遗传组成上有何差异？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0032"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.4866540181523805,
+          "chunk_id": "M_YLZWYCYZ_V3_0032",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.4 植物配子的形成与受精结实-17-17",
+          "chunk_title": "高等植物的两种基本繁殖方式（无性生殖与有性生殖）"
+        },
+        {
+          "rank": 2,
+          "score": 0.4494523879396824,
+          "chunk_id": "M_YLZWYCYZ_V3_0002",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-1-2",
+          "chunk_title": "遗传与变异在生物繁殖进化中的对立统一关系"
+        },
+        {
+          "rank": 3,
+          "score": 0.42850769384351023,
+          "chunk_id": "M_YLZWYCYZ_V3_0003",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-2-2",
+          "chunk_title": "遗传学的四大核心任务及园林植物遗传学的应用"
+        },
+        {
+          "rank": 4,
+          "score": 0.41576092031014994,
+          "chunk_id": "M_YLZWYCYZ_V3_0001",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-1-1",
+          "chunk_title": "遗传学、遗传与变异的基础定义及研究对象"
+        },
+        {
+          "rank": 5,
+          "score": 0.41538996764556185,
+          "chunk_id": "M_YLZWYCYZ_V3_0167",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.4 嵌合体的遗传-104-105",
+          "chunk_title": "嵌合体的不稳定遗传性：无性繁殖的多样性与有性繁殖的内层决定论"
+        },
+        {
+          "rank": 6,
+          "score": 0.41071571817952846,
+          "chunk_id": "M_YLZWYCYZ_V3_0139",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.4.2 物种形成的过程-89-89",
+          "chunk_title": "物种形成的第一阶段：基因交流阻断与合子后隔离（副产品）的产生"
+        },
+        {
+          "rank": 7,
+          "score": 0.4069940684815211,
+          "chunk_id": "M_YLZWYCYZ_V3_0136",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.4.1 物种的概念-88-88",
+          "chunk_title": "遗传学视角下的物种概念（生殖隔离与共同基因库）及动态分歧特征"
+        },
+        {
+          "rank": 8,
+          "score": 0.38688914450689305,
+          "chunk_id": "M_LMBLX_V3_0297",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-53-53",
+          "chunk_title": "DNA中G+C摩尔百分比在界定细菌种属（≤3%及10%~15%差异界限）中的应用"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "被子植物双受精过程中，胚和胚乳分别怎样形成？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0036"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5799407717681561,
+          "chunk_id": "M_YLZWYCYZ_V3_0036",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.4.2 植物受精结实-19-19",
+          "chunk_title": "被子植物的双受精过程及种子的遗传组成与意义"
+        },
+        {
+          "rank": 2,
+          "score": 0.3432283655123292,
+          "chunk_id": "M_YLZWYCYZ_V3_0033",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.4.1 植物雌雄配子的形成-17-18",
+          "chunk_title": "植物雄配子（精子）及雄配子体的形成过程"
+        },
+        {
+          "rank": 3,
+          "score": 0.31733153120876706,
+          "chunk_id": "M_YLZWYCYZ_V3_0034",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.4.1 植物雌雄配子的形成-18-18",
+          "chunk_title": "植物雌配子（卵细胞）及雌配子体的形成过程"
+        },
+        {
+          "rank": 4,
+          "score": 0.272899612253304,
+          "chunk_id": "M_LMBLX_V3_0370",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.4.1 菟丝子属-68-68",
+          "chunk_title": "菟丝子萌发后空中寻主、切断根部并在寄主上建立吸器的“寄生三部曲”"
+        },
+        {
+          "rank": 5,
+          "score": 0.26637531939822157,
+          "chunk_id": "M_YLZWYCYZ_V3_0045",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.2.2 核酸的分子结构-26-26",
+          "chunk_title": "RNA分子的结构特征（方向性与单链折叠）"
+        },
+        {
+          "rank": 6,
+          "score": 0.25922500219415573,
+          "chunk_id": "M_LMBLX_V3_0183",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1.5.5 子囊菌门菌物及其所致病害-28-29",
+          "chunk_title": "子囊菌质配后的双核阶段、核配、减数分裂及子囊（子囊孢子）的形态"
+        },
+        {
+          "rank": 7,
+          "score": 0.2571989246063659,
+          "chunk_id": "M_LMBLX_V3_0249",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1.5.7 无性型菌物及其所致病害-44-45",
+          "chunk_title": "分生孢子的7种形态分类及分生孢子盘、分生孢子器等载孢体结构"
+        },
+        {
+          "rank": 8,
+          "score": 0.2534195982810354,
+          "chunk_id": "M_LMBLX_V3_0209",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1.5.6 担子菌门菌物及其所致病害-38-38",
+          "chunk_title": "锈菌通过性孢子质配形成冬孢子并萌发担孢子的特殊有性过程"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "核酸可分为哪两大类，在细胞内主要分布在哪里？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0042"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5418455703565249,
+          "chunk_id": "M_YLZWYCYZ_V3_0042",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.2.1 核酸的分子组成-24-24",
+          "chunk_title": "核酸的分类、细胞内分布特征及基本单位（核苷酸）"
+        },
+        {
+          "rank": 2,
+          "score": 0.4084779432322414,
+          "chunk_id": "M_LMBLX_V3_0302",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-54-54",
+          "chunk_title": "依据细胞壁成分、脂肪酸、蛋白质等组分的化学分类法及技术手段"
+        },
+        {
+          "rank": 3,
+          "score": 0.3629822456021043,
+          "chunk_id": "M_YLZWYCYZ_V3_0026",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.1 有丝分裂-13-14",
+          "chunk_title": "有丝分裂的基础概念及各时期（间期至末期）过程详解"
+        },
+        {
+          "rank": 4,
+          "score": 0.35540882394880813,
+          "chunk_id": "M_YLZWYCYZ_V3_0025",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3 细胞分裂-13-13",
+          "chunk_title": "细胞分裂的基础概念与三种主要方式"
+        },
+        {
+          "rank": 5,
+          "score": 0.3505992276900842,
+          "chunk_id": "M_LMBLX_V3_0306",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.4 细菌分类系统-55-55",
+          "chunk_title": "1984版手册基于细胞壁结构的四大门划分及向自然分类体系的跨越"
+        },
+        {
+          "rank": 6,
+          "score": 0.34180836420009086,
+          "chunk_id": "M_LMBLX_V3_0296",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-52-53",
+          "chunk_title": "数值分类法的“等权”原则与借助计算机客观聚类的优势"
+        },
+        {
+          "rank": 7,
+          "score": 0.3325310858805881,
+          "chunk_id": "M_YLZWYCYZ_V3_0017",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.3 细胞核-10-10",
+          "chunk_title": "细胞核的组成与结构特征（核膜、核仁、核质及染色质形态）"
+        },
+        {
+          "rank": 8,
+          "score": 0.3271830502228014,
+          "chunk_id": "M_LMBLX_V3_0294",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-52-52",
+          "chunk_title": "细菌分类学的三大内容及从域到种下的分类等级（生理小种/致病变种等）"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "DNA复制的过程和四个核心特点是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0046"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.4713920000153638,
+          "chunk_id": "M_YLZWYCYZ_V3_0046",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.2.2 核酸的分子结构-26-27",
+          "chunk_title": "DNA的复制过程及其四大核心特点（半保留复制等）"
+        },
+        {
+          "rank": 2,
+          "score": 0.3424248203467266,
+          "chunk_id": "M_YLZWYCYZ_V3_0044",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.2.2 核酸的分子结构-25-26",
+          "chunk_title": "DNA双螺旋结构模型的提出与DNA分子结构特征"
+        },
+        {
+          "rank": 3,
+          "score": 0.3346130303829198,
+          "chunk_id": "M_YLZWYCYZ_V3_0056",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.5 中心法则及其发展-33-33",
+          "chunk_title": "中心法则的基础概念与后续发展（RNA复制与反转录）"
+        },
+        {
+          "rank": 4,
+          "score": 0.3270835600804305,
+          "chunk_id": "M_YLZWYCYZ_V3_0047",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.2.2 核酸的分子结构-27-27",
+          "chunk_title": "DNA准确复制的遗传学意义与复制差错导致的遗传变异"
+        },
+        {
+          "rank": 5,
+          "score": 0.31674895228049,
+          "chunk_id": "M_YLZWYCYZ_V3_0051",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.3 蛋白质的合成-29-30",
+          "chunk_title": "参与蛋白质合成的三种主要RNA（mRNA、tRNA、rRNA）及核糖体"
+        },
+        {
+          "rank": 6,
+          "score": 0.3158030954440196,
+          "chunk_id": "M_YLZWYCYZ_V3_0052",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.3 蛋白质的合成-30-31",
+          "chunk_title": "蛋白质合成的转录过程（从DNA到mRNA）"
+        },
+        {
+          "rank": 7,
+          "score": 0.3066203989838744,
+          "chunk_id": "M_YLZWYCYZ_V3_0058",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.1 基因工程的概念及原理-34-35",
+          "chunk_title": "基因工程的工具酶：限制性内切酶与DNA连接酶"
+        },
+        {
+          "rank": 8,
+          "score": 0.2985699612136667,
+          "chunk_id": "M_YLZWYCYZ_V3_0017",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.3 细胞核-10-10",
+          "chunk_title": "细胞核的组成与结构特征（核膜、核仁、核质及染色质形态）"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "现代遗传学中，基因的三个基本单位分别指什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0048"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.550496128804369,
+          "chunk_id": "M_YLZWYCYZ_V3_0007",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "现代遗传学阶段：分子遗传学与基因工程的兴起"
+        },
+        {
+          "rank": 2,
+          "score": 0.5303182864865008,
+          "chunk_id": "M_YLZWYCYZ_V3_0075",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-47-47",
+          "chunk_title": "复等位基因的概念及其在人类ABO血型遗传中的表现"
+        },
+        {
+          "rank": 3,
+          "score": 0.5020753864518842,
+          "chunk_id": "M_YLZWYCYZ_V3_0119",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.1.2 基因频率和基因型频率-81-81",
+          "chunk_title": "基因频率与基因型频率的概念定义及紫茉莉花色计算实例"
+        },
+        {
+          "rank": 4,
+          "score": 0.4868471747277463,
+          "chunk_id": "M_YLZWYCYZ_V3_0095",
+          "citation_anchor": "园林植物遗传育种（第3版）-数量性状的遗传-4.1.2 数量性状的遗传机理——微效多基因假说-62-63",
+          "chunk_title": "微效多基因假说的核心逻辑及分离比例的二项式展开公式"
+        },
+        {
+          "rank": 5,
+          "score": 0.4855249717578901,
+          "chunk_id": "M_YLZWYCYZ_V3_0048",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.1 基因的概念-27-28",
+          "chunk_title": "现代基因的概念及其三大基本单位（突变子、重组子、顺反子）"
+        },
+        {
+          "rank": 6,
+          "score": 0.4814962824600307,
+          "chunk_id": "M_YLZWYCYZ_V3_0006",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "经典遗传学阶段：染色体理论与基因概念的确立"
+        },
+        {
+          "rank": 7,
+          "score": 0.4656126275698844,
+          "chunk_id": "M_YLZWYCYZ_V3_0077",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-47-49",
+          "chunk_title": "两对非等位基因的六种互作模式及其修饰分离比例"
+        },
+        {
+          "rank": 8,
+          "score": 0.46551324356164075,
+          "chunk_id": "M_YLZWYCYZ_V3_0057",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.1 基因工程的概念及原理-34-34",
+          "chunk_title": "基因工程的基础概念、原理特征及四大核心操作步骤"
+        }
+      ],
+      "first_relevant_rank": 5
+    },
+    {
+      "question": "什么是遗传密码，为什么三联体密码能够对应20种氨基酸？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0049"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5243171490647118,
+          "chunk_id": "M_YLZWYCYZ_V3_0049",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.2 遗传密码-28-28",
+          "chunk_title": "遗传密码与三联体密码的概念及破译逻辑"
+        },
+        {
+          "rank": 2,
+          "score": 0.4470881519760496,
+          "chunk_id": "M_YLZWYCYZ_V3_0050",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.2 遗传密码-29-29",
+          "chunk_title": "遗传密码的重要特性（简并性、起止信号及通用性）"
+        },
+        {
+          "rank": 3,
+          "score": 0.30665079024576375,
+          "chunk_id": "M_YLZWYCYZ_V3_0051",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.3 蛋白质的合成-29-30",
+          "chunk_title": "参与蛋白质合成的三种主要RNA（mRNA、tRNA、rRNA）及核糖体"
+        },
+        {
+          "rank": 4,
+          "score": 0.29635321458807323,
+          "chunk_id": "M_YLZWYCYZ_V3_0053",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.3 蛋白质的合成-31-32",
+          "chunk_title": "蛋白质合成的翻译过程（从mRNA到多肽链）"
+        },
+        {
+          "rank": 5,
+          "score": 0.2597114495158473,
+          "chunk_id": "M_YLZWYCYZ_V3_0073",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.3 多对相对性状的遗传-46-46",
+          "chunk_title": "多对相对性状独立遗传时的组合、基因型与表现型规律"
+        },
+        {
+          "rank": 6,
+          "score": 0.23971691523105976,
+          "chunk_id": "M_YLZWYCYZ_V3_0007",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "现代遗传学阶段：分子遗传学与基因工程的兴起"
+        },
+        {
+          "rank": 7,
+          "score": 0.2377470586071851,
+          "chunk_id": "M_YLZWYCYZ_V3_0006",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "经典遗传学阶段：染色体理论与基因概念的确立"
+        },
+        {
+          "rank": 8,
+          "score": 0.23646249791978685,
+          "chunk_id": "M_YLZWYCYZ_V3_0118",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.1.1 理想群体-81-81",
+          "chunk_title": "群体遗传学的研究范畴与最终目的"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "根据转录和翻译功能，基因可以分为哪三类？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0054"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.48095238095238096,
+          "chunk_id": "M_YLZWYCYZ_V3_0054",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.4 基因对性状的控制-33-33",
+          "chunk_title": "基因的三大功能分类及其在个体发育中的选择性表达"
+        },
+        {
+          "rank": 2,
+          "score": 0.3116175682952018,
+          "chunk_id": "M_YLZWYCYZ_V3_0060",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.1 基因工程的概念及原理-36-36",
+          "chunk_title": "目的基因的分离途径与散弹射击法（鸟枪法）"
+        },
+        {
+          "rank": 3,
+          "score": 0.30245674052775867,
+          "chunk_id": "M_YLZWYCYZ_V3_0087",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.2 细胞质基因与细胞核基因的关系-54-54",
+          "chunk_title": "细胞质基因与细胞核基因在功能结构上的相似性与差异性"
+        },
+        {
+          "rank": 4,
+          "score": 0.2903816034562511,
+          "chunk_id": "M_LMBLX_V3_0294",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-52-52",
+          "chunk_title": "细菌分类学的三大内容及从域到种下的分类等级（生理小种/致病变种等）"
+        },
+        {
+          "rank": 5,
+          "score": 0.28874337124263866,
+          "chunk_id": "M_LMBLX_V3_0559",
+          "citation_anchor": "林木病理学（第3版）-病原物的致病性和林木的抗病性-4.2.3 林木抗病性的遗传与变异-116-117",
+          "chunk_title": "Vanderplank 认为“感病基因”本质是植物必需生理功能基因而非为病原物特设的理论"
+        },
+        {
+          "rank": 6,
+          "score": 0.28455352404507406,
+          "chunk_id": "M_YLZWYCYZ_V3_0077",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-47-49",
+          "chunk_title": "两对非等位基因的六种互作模式及其修饰分离比例"
+        },
+        {
+          "rank": 7,
+          "score": 0.282746882313483,
+          "chunk_id": "M_YLZWYCYZ_V3_0059",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.1 基因工程的概念及原理-35-36",
+          "chunk_title": "运载体的功能特征及常用载体（质粒）的作用"
+        },
+        {
+          "rank": 8,
+          "score": 0.27943722127220355,
+          "chunk_id": "M_YLZWYCYZ_V3_0065",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.2 分离现象的分析-41-41",
+          "chunk_title": "孟德尔基因分离假说的核心要点"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "中心法则的基本含义是什么，后来有哪些发展？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0056"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.3476173309944911,
+          "chunk_id": "M_YLZWYCYZ_V3_0056",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.5 中心法则及其发展-33-33",
+          "chunk_title": "中心法则的基础概念与后续发展（RNA复制与反转录）"
+        },
+        {
+          "rank": 2,
+          "score": 0.32590934527526305,
+          "chunk_id": "M_YLZWYCYZ_V3_0210",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.1 引种驯化的原理-127-127",
+          "chunk_title": "引种驯化原理：栽培植物起源中心理论（瓦维洛夫）及其在基因资源引种中的价值"
+        },
+        {
+          "rank": 3,
+          "score": 0.3091390815279789,
+          "chunk_id": "M_YLZWYCYZ_V3_0060",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.1 基因工程的概念及原理-36-36",
+          "chunk_title": "目的基因的分离途径与散弹射击法（鸟枪法）"
+        },
+        {
+          "rank": 4,
+          "score": 0.30590325127515217,
+          "chunk_id": "M_YLZWYCYZ_V3_0054",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.4 基因对性状的控制-33-33",
+          "chunk_title": "基因的三大功能分类及其在个体发育中的选择性表达"
+        },
+        {
+          "rank": 5,
+          "score": 0.2888697952392524,
+          "chunk_id": "M_YLZWYCYZ_V3_0066",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.2 分离现象的分析-41-42",
+          "chunk_title": "分离假说的三种验证方法（测交法、自交法与花粉测定法）"
+        },
+        {
+          "rank": 6,
+          "score": 0.2870016414526784,
+          "chunk_id": "M_YLZWYCYZ_V3_0160",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.2 规则彩斑的遗传-102-102",
+          "chunk_title": "规则彩斑的遗传基础及三色堇花斑（受抑制基因控制）的遗传机制"
+        },
+        {
+          "rank": 7,
+          "score": 0.28581167784990313,
+          "chunk_id": "M_YLZWYCYZ_V3_0038",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.1.1 DNA作为主要遗传物质的间接证据-21-21",
+          "chunk_title": "证明DNA是主要遗传物质的四大间接证据"
+        },
+        {
+          "rank": 8,
+          "score": 0.2855280712413105,
+          "chunk_id": "M_YLZWYCYZ_V3_0007",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "现代遗传学阶段：分子遗传学与基因工程的兴起"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "孟德尔基因分离假说的核心要点有哪些？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0065"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.43659823563505457,
+          "chunk_id": "M_YLZWYCYZ_V3_0096",
+          "citation_anchor": "园林植物遗传育种（第3版）-数量性状的遗传-4.1.2 数量性状的遗传机理——微效多基因假说-63-63",
+          "chunk_title": "微效多基因假说的五大核心要点归纳"
+        },
+        {
+          "rank": 2,
+          "score": 0.4162462507896706,
+          "chunk_id": "M_YLZWYCYZ_V3_0065",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.2 分离现象的分析-41-41",
+          "chunk_title": "孟德尔基因分离假说的核心要点"
+        },
+        {
+          "rank": 3,
+          "score": 0.4093554899097994,
+          "chunk_id": "M_YLZWYCYZ_V3_0095",
+          "citation_anchor": "园林植物遗传育种（第3版）-数量性状的遗传-4.1.2 数量性状的遗传机理——微效多基因假说-62-63",
+          "chunk_title": "微效多基因假说的核心逻辑及分离比例的二项式展开公式"
+        },
+        {
+          "rank": 4,
+          "score": 0.4021682075703825,
+          "chunk_id": "M_YLZWYCYZ_V3_0066",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.2 分离现象的分析-41-42",
+          "chunk_title": "分离假说的三种验证方法（测交法、自交法与花粉测定法）"
+        },
+        {
+          "rank": 5,
+          "score": 0.3884820277263579,
+          "chunk_id": "M_YLZWYCYZ_V3_0060",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.1 基因工程的概念及原理-36-36",
+          "chunk_title": "目的基因的分离途径与散弹射击法（鸟枪法）"
+        },
+        {
+          "rank": 6,
+          "score": 0.38220305275028643,
+          "chunk_id": "M_YLZWYCYZ_V3_0088",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.2 细胞质基因与细胞核基因的关系-55-55",
+          "chunk_title": "细胞质基因与细胞核基因的相互调节与主次关系"
+        },
+        {
+          "rank": 7,
+          "score": 0.38219684688901967,
+          "chunk_id": "M_YLZWYCYZ_V3_0054",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.4 基因对性状的控制-33-33",
+          "chunk_title": "基因的三大功能分类及其在个体发育中的选择性表达"
+        },
+        {
+          "rank": 8,
+          "score": 0.36925049641146973,
+          "chunk_id": "M_YLZWYCYZ_V3_0087",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.2 细胞质基因与细胞核基因的关系-54-54",
+          "chunk_title": "细胞质基因与细胞核基因在功能结构上的相似性与差异性"
+        }
+      ],
+      "first_relevant_rank": 2
+    },
+    {
+      "question": "验证孟德尔分离假说可以采用哪三种方法？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0066"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.29842459526191717,
+          "chunk_id": "M_YLZWYCYZ_V3_0068",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.3 分离规律及其应用-43-43",
+          "chunk_title": "分离规律在育种、良种繁育及杂种优势利用中的实际应用"
+        },
+        {
+          "rank": 2,
+          "score": 0.29678550180127145,
+          "chunk_id": "M_YLZWYCYZ_V3_0066",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.2 分离现象的分析-41-42",
+          "chunk_title": "分离假说的三种验证方法（测交法、自交法与花粉测定法）"
+        },
+        {
+          "rank": 3,
+          "score": 0.27524094128159016,
+          "chunk_id": "M_YLZWYCYZ_V3_0376",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.6.4 良种繁育-206-206",
+          "chunk_title": "鸢尾根茎分株的芽数标准与种子“忌干藏”处理要求"
+        },
+        {
+          "rank": 4,
+          "score": 0.26210529752729134,
+          "chunk_id": "M_YLZWYCYZ_V3_0219",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.2 引种的方法-130-131",
+          "chunk_title": "引种试验的对照设置原则及早期筛选阶段：种源试验与品种比较试验"
+        },
+        {
+          "rank": 5,
+          "score": 0.2585526216339838,
+          "chunk_id": "M_YLZWYCYZ_V3_0294",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.2.2 防止良种退化的方法-176-176",
+          "chunk_title": "防止生物学混杂的两大核心隔离法：空间隔离与时间隔离"
+        },
+        {
+          "rank": 6,
+          "score": 0.25104284104229146,
+          "chunk_id": "M_YLZWYCYZ_V3_0396",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.3.4 育种技术-214-215",
+          "chunk_title": "郁金香引种的三大核心问题及品种/品种群/种间杂交的潜力对比"
+        },
+        {
+          "rank": 7,
+          "score": 0.25059665955985283,
+          "chunk_id": "M_YLZWYCYZ_V3_0269",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.5.3 杂种优势的利用-159-160",
+          "chunk_title": "杂交制种的现场管理：环境隔离、亲本提纯、播种布局与采收规范"
+        },
+        {
+          "rank": 8,
+          "score": 0.2480342862855478,
+          "chunk_id": "M_LMBLX_V3_0294",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-52-52",
+          "chunk_title": "细菌分类学的三大内容及从域到种下的分类等级（生理小种/致病变种等）"
+        }
+      ],
+      "first_relevant_rank": 2
+    },
+    {
+      "question": "独立分配规律的概念和细胞学实质是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0071"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.443249740327047,
+          "chunk_id": "M_YLZWYCYZ_V3_0071",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.2 自由组合规律及其应用-45-45",
+          "chunk_title": "独立分配规律的基础概念与其细胞学实质"
+        },
+        {
+          "rank": 2,
+          "score": 0.4301039748426835,
+          "chunk_id": "M_YLZWYCYZ_V3_0027",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.1 有丝分裂-14-15",
+          "chunk_title": "有丝分裂的遗传学意义及无性繁殖的细胞学基础"
+        },
+        {
+          "rank": 3,
+          "score": 0.42916666666666664,
+          "chunk_id": "M_YLZWYCYZ_V3_0015",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.1 细胞膜和细胞壁-8-9",
+          "chunk_title": "园林植物细胞的基本特征与细胞膜、细胞壁的结构功能"
+        },
+        {
+          "rank": 4,
+          "score": 0.4079554083754694,
+          "chunk_id": "M_LMBLX_V3_0302",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.3 细菌分类方法-54-54",
+          "chunk_title": "依据细胞壁成分、脂肪酸、蛋白质等组分的化学分类法及技术手段"
+        },
+        {
+          "rank": 5,
+          "score": 0.4037885007481212,
+          "chunk_id": "M_YLZWYCYZ_V3_0086",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-54-54",
+          "chunk_title": "细胞质遗传的区别于核遗传的三大核心特点"
+        },
+        {
+          "rank": 6,
+          "score": 0.3944386625195501,
+          "chunk_id": "M_YLZWYCYZ_V3_0067",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.1.3 分离规律及其应用-42-43",
+          "chunk_title": "分离规律的概念、实质及其实现的五大条件"
+        },
+        {
+          "rank": 7,
+          "score": 0.39039875345203273,
+          "chunk_id": "M_YLZWYCYZ_V3_0016",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.2 细胞质和细胞器-9-9",
+          "chunk_title": "细胞质的组成及四大主要细胞器（线粒体、质体、核糖体、内质网）"
+        },
+        {
+          "rank": 8,
+          "score": 0.37763560360688886,
+          "chunk_id": "M_LMBLX_V3_0288",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.1 细菌的一般性状-51-51",
+          "chunk_title": "细菌的原核细胞本质及其携带有致病基因的独立环状遗传物质（质粒）"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "等位基因之间有哪四种相互作用类型？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0074"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.4986559578679278,
+          "chunk_id": "M_YLZWYCYZ_V3_0075",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-47-47",
+          "chunk_title": "复等位基因的概念及其在人类ABO血型遗传中的表现"
+        },
+        {
+          "rank": 2,
+          "score": 0.4506245665739941,
+          "chunk_id": "M_YLZWYCYZ_V3_0076",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-47-47",
+          "chunk_title": "非等位基因间相互作用的基础概念（一因多效与多因一效）"
+        },
+        {
+          "rank": 3,
+          "score": 0.44424394662854405,
+          "chunk_id": "M_YLZWYCYZ_V3_0077",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-47-49",
+          "chunk_title": "两对非等位基因的六种互作模式及其修饰分离比例"
+        },
+        {
+          "rank": 4,
+          "score": 0.41714884381325673,
+          "chunk_id": "M_YLZWYCYZ_V3_0111",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.4 基因突变的一般特征-78-79",
+          "chunk_title": "基因突变的多向性特征及复等位基因（自交不亲和性）的概念"
+        },
+        {
+          "rank": 5,
+          "score": 0.4080971713432074,
+          "chunk_id": "M_YLZWYCYZ_V3_0073",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.3 多对相对性状的遗传-46-46",
+          "chunk_title": "多对相对性状独立遗传时的组合、基因型与表现型规律"
+        },
+        {
+          "rank": 6,
+          "score": 0.35575623676894264,
+          "chunk_id": "M_LMBLX_V3_0662",
+          "citation_anchor": "林木病理学（第3版）-林木病害防治-6.7 生物防治-138-138",
+          "chunk_title": "生物防治利用多种有利于抑制病原物的生物相互作用"
+        },
+        {
+          "rank": 7,
+          "score": 0.35398576618665173,
+          "chunk_id": "M_YLZWYCYZ_V3_0071",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.2 自由组合规律及其应用-45-45",
+          "chunk_title": "独立分配规律的基础概念与其细胞学实质"
+        },
+        {
+          "rank": 8,
+          "score": 0.3528340543636614,
+          "chunk_id": "M_YLZWYCYZ_V3_0115",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.5 基因突变在育种上的应用-80-80",
+          "chunk_title": "诱变育种的概念、物理与化学诱变因素及其作用机理"
+        }
+      ],
+      "first_relevant_rank": null
+    },
+    {
+      "question": "连锁基因之间发生交换的遗传和细胞学机制是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0080"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5711454571208012,
+          "chunk_id": "M_YLZWYCYZ_V3_0081",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.3.4 交换值的计算-51-52",
+          "chunk_title": "交换率的计算公式、连锁强度的判断及完全/不完全连锁概念"
+        },
+        {
+          "rank": 2,
+          "score": 0.5456679229190046,
+          "chunk_id": "M_YLZWYCYZ_V3_0080",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.3.3 连锁及交换的遗传机制-51-51",
+          "chunk_title": "连锁及交换的遗传与细胞学机制（非姊妹染色单体交叉）"
+        },
+        {
+          "rank": 3,
+          "score": 0.4883105900748736,
+          "chunk_id": "M_YLZWYCYZ_V3_0086",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-54-54",
+          "chunk_title": "细胞质遗传的区别于核遗传的三大核心特点"
+        },
+        {
+          "rank": 4,
+          "score": 0.4857838742532411,
+          "chunk_id": "M_YLZWYCYZ_V3_0084",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-53-53",
+          "chunk_title": "细胞质遗传（核外遗传）的基础概念与别称"
+        },
+        {
+          "rank": 5,
+          "score": 0.4784889996597684,
+          "chunk_id": "M_YLZWYCYZ_V3_0003",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-2-2",
+          "chunk_title": "遗传学的四大核心任务及园林植物遗传学的应用"
+        },
+        {
+          "rank": 6,
+          "score": 0.46526607069171505,
+          "chunk_id": "M_YLZWYCYZ_V3_0006",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "经典遗传学阶段：染色体理论与基因概念的确立"
+        },
+        {
+          "rank": 7,
+          "score": 0.4457833160162763,
+          "chunk_id": "M_YLZWYCYZ_V3_0001",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-1-1",
+          "chunk_title": "遗传学、遗传与变异的基础定义及研究对象"
+        },
+        {
+          "rank": 8,
+          "score": 0.4451510490132558,
+          "chunk_id": "M_YLZWYCYZ_V3_0087",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.2 细胞质基因与细胞核基因的关系-54-54",
+          "chunk_title": "细胞质基因与细胞核基因在功能结构上的相似性与差异性"
+        }
+      ],
+      "first_relevant_rank": 2
+    },
+    {
+      "question": "细胞质遗传与核遗传相比有哪些核心特点？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0086"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6660729304645694,
+          "chunk_id": "M_YLZWYCYZ_V3_0084",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-53-53",
+          "chunk_title": "细胞质遗传（核外遗传）的基础概念与别称"
+        },
+        {
+          "rank": 2,
+          "score": 0.4751237763640011,
+          "chunk_id": "M_YLZWYCYZ_V3_0086",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-54-54",
+          "chunk_title": "细胞质遗传的区别于核遗传的三大核心特点"
+        },
+        {
+          "rank": 3,
+          "score": 0.44827607963124,
+          "chunk_id": "M_YLZWYCYZ_V3_0037",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.1 DNA是主要的遗传物质-21-21",
+          "chunk_title": "染色体的核心成分与遗传物质的疑问"
+        },
+        {
+          "rank": 4,
+          "score": 0.42135048580019224,
+          "chunk_id": "M_YLZWYCYZ_V3_0017",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.3 细胞核-10-10",
+          "chunk_title": "细胞核的组成与结构特征（核膜、核仁、核质及染色质形态）"
+        },
+        {
+          "rank": 5,
+          "score": 0.4032024979278528,
+          "chunk_id": "M_LMBLX_V3_0288",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.1 细菌的一般性状-51-51",
+          "chunk_title": "细菌的原核细胞本质及其携带有致病基因的独立环状遗传物质（质粒）"
+        },
+        {
+          "rank": 6,
+          "score": 0.3818038812286009,
+          "chunk_id": "M_YLZWYCYZ_V3_0087",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.2 细胞质基因与细胞核基因的关系-54-54",
+          "chunk_title": "细胞质基因与细胞核基因在功能结构上的相似性与差异性"
+        },
+        {
+          "rank": 7,
+          "score": 0.3761904761904762,
+          "chunk_id": "M_YLZWYCYZ_V3_0016",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.2 细胞质和细胞器-9-9",
+          "chunk_title": "细胞质的组成及四大主要细胞器（线粒体、质体、核糖体、内质网）"
+        },
+        {
+          "rank": 8,
+          "score": 0.3618386550972148,
+          "chunk_id": "M_YLZWYCYZ_V3_0027",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.3.1 有丝分裂-14-15",
+          "chunk_title": "有丝分裂的遗传学意义及无性繁殖的细胞学基础"
+        }
+      ],
+      "first_relevant_rank": 2
+    },
+    {
+      "question": "植物雄性不育的概念是什么，可遗传雄性不育为什么对育种有意义？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0089"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.7240113434941575,
+          "chunk_id": "M_YLZWYCYZ_V3_0089",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.3 植物雄性不育性的遗传-55-56",
+          "chunk_title": "植物雄性不育的概念、分类及细胞核/细胞质不育的特点"
+        },
+        {
+          "rank": 2,
+          "score": 0.5845009239757113,
+          "chunk_id": "M_YLZWYCYZ_V3_0090",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.3 植物雄性不育性的遗传-56-56",
+          "chunk_title": "质核互作型雄性不育的机制及“三系”（不育系、保持系、恢复系）的定义"
+        },
+        {
+          "rank": 3,
+          "score": 0.46215190422692265,
+          "chunk_id": "M_YLZWYCYZ_V3_0009",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.3 园林植物育种学的任务及作用-4-4",
+          "chunk_title": "园林植物的主要育种目标（抗性、观赏性与经济性状）"
+        },
+        {
+          "rank": 4,
+          "score": 0.4499770425732575,
+          "chunk_id": "M_YLZWYCYZ_V3_0014",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-6-6",
+          "chunk_title": "良种繁育的作用与现代园林植物育种的发展趋势"
+        },
+        {
+          "rank": 5,
+          "score": 0.44568310226108104,
+          "chunk_id": "M_YLZWYCYZ_V3_0268",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.5.3 杂种优势的利用-158-159",
+          "chunk_title": "生产杂交种子的六种主要途径：人工/化学杀雄、利用不亲和性、标志性状及雄性不育系"
+        },
+        {
+          "rank": 6,
+          "score": 0.4086514987502554,
+          "chunk_id": "M_YLZWYCYZ_V3_0263",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.4.2 克服远缘杂种不育的方法-156-156",
+          "chunk_title": "远缘杂种不育性的概念及延长生育期、回交与田间管理等克服手段"
+        },
+        {
+          "rank": 7,
+          "score": 0.406904755824402,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 8,
+          "score": 0.40195863394791737,
+          "chunk_id": "M_YLZWYCYZ_V3_0308",
+          "citation_anchor": "园林植物遗传育种（第3版）-一、二年生花卉育种-14.1.4 育种途径-185-185",
+          "chunk_title": "一串红杂交育种、远缘杂交及雄性不育利用途径"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "质核互作型雄性不育是怎样形成的，“三系”包括哪些？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0090"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5573032574934411,
+          "chunk_id": "M_YLZWYCYZ_V3_0090",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.3 植物雄性不育性的遗传-56-56",
+          "chunk_title": "质核互作型雄性不育的机制及“三系”（不育系、保持系、恢复系）的定义"
+        },
+        {
+          "rank": 2,
+          "score": 0.5175635817029091,
+          "chunk_id": "M_YLZWYCYZ_V3_0089",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.3 植物雄性不育性的遗传-55-56",
+          "chunk_title": "植物雄性不育的概念、分类及细胞核/细胞质不育的特点"
+        },
+        {
+          "rank": 3,
+          "score": 0.3913044153668058,
+          "chunk_id": "M_YLZWYCYZ_V3_0268",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.5.3 杂种优势的利用-158-159",
+          "chunk_title": "生产杂交种子的六种主要途径：人工/化学杀雄、利用不亲和性、标志性状及雄性不育系"
+        },
+        {
+          "rank": 4,
+          "score": 0.3635715404295996,
+          "chunk_id": "M_YLZWYCYZ_V3_0017",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.3 细胞核-10-10",
+          "chunk_title": "细胞核的组成与结构特征（核膜、核仁、核质及染色质形态）"
+        },
+        {
+          "rank": 5,
+          "score": 0.3497086064926312,
+          "chunk_id": "M_YLZWYCYZ_V3_0074",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-46-47",
+          "chunk_title": "等位基因间的四种相互作用（完全/不完全/共/超显性）及环境对表现型的影响"
+        },
+        {
+          "rank": 6,
+          "score": 0.33400407673019383,
+          "chunk_id": "M_YLZWYCYZ_V3_0051",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.3 蛋白质的合成-29-30",
+          "chunk_title": "参与蛋白质合成的三种主要RNA（mRNA、tRNA、rRNA）及核糖体"
+        },
+        {
+          "rank": 7,
+          "score": 0.3256758765782443,
+          "chunk_id": "M_LMBLX_V3_0288",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.2.1.1 细菌的一般性状-51-51",
+          "chunk_title": "细菌的原核细胞本质及其携带有致病基因的独立环状遗传物质（质粒）"
+        },
+        {
+          "rank": 8,
+          "score": 0.3226543601549996,
+          "chunk_id": "M_YLZWYCYZ_V3_0088",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.2 细胞质基因与细胞核基因的关系-55-55",
+          "chunk_title": "细胞质基因与细胞核基因的相互调节与主次关系"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "整倍体变异包括哪些类型，它们在育种中有什么意义？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0102"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.4009557958668692,
+          "chunk_id": "M_YLZWYCYZ_V3_0104",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.2 染色体数目的变异-76-76",
+          "chunk_title": "染色体变异在农业与园林植物（如菊花）育种中的应用"
+        },
+        {
+          "rank": 2,
+          "score": 0.3673123818407813,
+          "chunk_id": "M_YLZWYCYZ_V3_0279",
+          "citation_anchor": "园林植物遗传育种（第3版）-诱变及倍性育种-12.2.1 单倍体育种-167-167",
+          "chunk_title": "单倍体育种的概念定义及其在缩短年限与纯系培育中的四大意义"
+        },
+        {
+          "rank": 3,
+          "score": 0.364062886832332,
+          "chunk_id": "M_YLZWYCYZ_V3_0390",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.2.4 育种技术-212-212",
+          "chunk_title": "秋水仙素诱导荷花四倍体（建莲）技术及太空诱变育种"
+        },
+        {
+          "rank": 4,
+          "score": 0.3614241157925797,
+          "chunk_id": "M_YLZWYCYZ_V3_0102",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.2 染色体数目的变异-75-76",
+          "chunk_title": "整倍体变异的四大类型（单倍体、一倍体、二倍体、多倍体）"
+        },
+        {
+          "rank": 5,
+          "score": 0.3490393462126871,
+          "chunk_id": "M_YLZWYCYZ_V3_0236",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.4 芽变选种-138-138",
+          "chunk_title": "芽变的四大遗传学基础：染色体数量/结构变异、核基因突变与细胞质突变"
+        },
+        {
+          "rank": 6,
+          "score": 0.345247089269106,
+          "chunk_id": "M_YLZWYCYZ_V3_0388",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.2.4 育种技术-212-212",
+          "chunk_title": "荷花性状遗传的大湖中的天然三倍体芽变"
+        },
+        {
+          "rank": 7,
+          "score": 0.34477990269480496,
+          "chunk_id": "M_YLZWYCYZ_V3_0398",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.3.4 育种技术-215-215",
+          "chunk_title": "自发芽变为主的诱变育种、秋水仙素诱导多倍体及组培技术"
+        },
+        {
+          "rank": 8,
+          "score": 0.34023553945824153,
+          "chunk_id": "M_YLZWYCYZ_V3_0303",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.3.2 园林植物组织培养-180-181",
+          "chunk_title": "组培技术在突变筛选、多倍体/单倍体育种及种质保存中的作用"
+        }
+      ],
+      "first_relevant_rank": 4
+    },
+    {
+      "question": "什么是基因突变，为什么也称为点突变？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0105"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5798892819604808,
+          "chunk_id": "M_YLZWYCYZ_V3_0110",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.4 基因突变的一般特征-78-78",
+          "chunk_title": "基因突变的可逆性（正突变与反突变）特征"
+        },
+        {
+          "rank": 2,
+          "score": 0.551767772736934,
+          "chunk_id": "M_YLZWYCYZ_V3_0105",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.1 基因突变的概念-77-77",
+          "chunk_title": "基因突变（点突变）的基础概念及其分子层面的实质（错义突变与移码突变）"
+        },
+        {
+          "rank": 3,
+          "score": 0.4679791927926688,
+          "chunk_id": "M_YLZWYCYZ_V3_0109",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.4 基因突变的一般特征-78-78",
+          "chunk_title": "基因突变的重演性特征及实例"
+        },
+        {
+          "rank": 4,
+          "score": 0.4338777039098705,
+          "chunk_id": "M_YLZWYCYZ_V3_0236",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.4 芽变选种-138-138",
+          "chunk_title": "芽变的四大遗传学基础：染色体数量/结构变异、核基因突变与细胞质突变"
+        },
+        {
+          "rank": 5,
+          "score": 0.42194244930089825,
+          "chunk_id": "M_YLZWYCYZ_V3_0106",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.2 基因突变的频率-77-77",
+          "chunk_title": "基因突变频率的概念、自发突变率水平及内外影响因素"
+        },
+        {
+          "rank": 6,
+          "score": 0.40479743296283655,
+          "chunk_id": "M_YLZWYCYZ_V3_0107",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.3 性细胞突变与体细胞突变-77-78",
+          "chunk_title": "性细胞突变的概念、频率特征及显/隐性突变在后代中的表现差异"
+        },
+        {
+          "rank": 7,
+          "score": 0.40316473806629827,
+          "chunk_id": "M_YLZWYCYZ_V3_0112",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.4 基因突变的一般特征-79-79",
+          "chunk_title": "基因突变的平行性特征及其在诱变育种中的指导意义"
+        },
+        {
+          "rank": 8,
+          "score": 0.39875789240004356,
+          "chunk_id": "M_YLZWYCYZ_V3_0116",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.5 基因突变在育种上的应用-80-80",
+          "chunk_title": "诱发突变与自发突变的对比及人工诱变育种的实践成果"
+        }
+      ],
+      "first_relevant_rank": 2
+    },
+    {
+      "question": "诱变育种的概念是什么，诱变因素主要有哪些类型？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0115"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.56422476673472,
+          "chunk_id": "M_YLZWYCYZ_V3_0270",
+          "citation_anchor": "园林植物遗传育种（第3版）-诱变及倍性育种-12.1 诱变育种-161-162",
+          "chunk_title": "诱变育种的概念定义及化学诱变育种的 5 大技术特点"
+        },
+        {
+          "rank": 2,
+          "score": 0.5169341375966833,
+          "chunk_id": "M_YLZWYCYZ_V3_0116",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.5 基因突变在育种上的应用-80-80",
+          "chunk_title": "诱发突变与自发突变的对比及人工诱变育种的实践成果"
+        },
+        {
+          "rank": 3,
+          "score": 0.485699945295517,
+          "chunk_id": "M_YLZWYCYZ_V3_0406",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.4.4 育种方法-217-217",
+          "chunk_title": "60Co辐射诱变的广泛形态改变与化学诱变诱发的“异色花边”"
+        },
+        {
+          "rank": 4,
+          "score": 0.47178953554912434,
+          "chunk_id": "M_YLZWYCYZ_V3_0115",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.5 基因突变在育种上的应用-80-80",
+          "chunk_title": "诱变育种的概念、物理与化学诱变因素及其作用机理"
+        },
+        {
+          "rank": 5,
+          "score": 0.46800784077976626,
+          "chunk_id": "M_YLZWYCYZ_V3_0340",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.2.4 育种方法-196-196",
+          "chunk_title": "物理/化学诱变方法及转基因技术在兰花品质改良中的应用"
+        },
+        {
+          "rank": 6,
+          "score": 0.4501372836640914,
+          "chunk_id": "M_YLZWYCYZ_V3_0196",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-120",
+          "chunk_title": "人工创造的种质资源的概念、形成方式及其综合性状优势"
+        },
+        {
+          "rank": 7,
+          "score": 0.44970743882379594,
+          "chunk_id": "M_YLZWYCYZ_V3_0233",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.4 芽变选种-137-138",
+          "chunk_title": "芽变选种的概念定义、历史应用及芽变与饰变（彷徨变异）的核心区别"
+        },
+        {
+          "rank": 8,
+          "score": 0.44339305655073424,
+          "chunk_id": "M_YLZWYCYZ_V3_0114",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.5 基因突变在育种上的应用-79-79",
+          "chunk_title": "自然突变与芽变选种在园林植物育种中的应用"
+        }
+      ],
+      "first_relevant_rank": 4
+    },
+    {
+      "question": "什么是理想群体或孟德尔群体，它应具备哪些核心特征？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0117"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5038670481648637,
+          "chunk_id": "M_YLZWYCYZ_V3_0117",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.1.1 理想群体-81-81",
+          "chunk_title": "理想群体（孟德尔群体）的概念与三大核心特征"
+        },
+        {
+          "rank": 2,
+          "score": 0.30331142829894275,
+          "chunk_id": "M_YLZWYCYZ_V3_0103",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.2 染色体数目的变异-76-76",
+          "chunk_title": "非整倍体变异的概念及类型（亚倍体与超倍体体系）"
+        },
+        {
+          "rank": 3,
+          "score": 0.30033238832976633,
+          "chunk_id": "M_YLZWYCYZ_V3_0118",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.1.1 理想群体-81-81",
+          "chunk_title": "群体遗传学的研究范畴与最终目的"
+        },
+        {
+          "rank": 4,
+          "score": 0.2852612345552926,
+          "chunk_id": "M_YLZWYCYZ_V3_0102",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.1.2 染色体数目的变异-75-76",
+          "chunk_title": "整倍体变异的四大类型（单倍体、一倍体、二倍体、多倍体）"
+        },
+        {
+          "rank": 5,
+          "score": 0.2723751915374521,
+          "chunk_id": "M_YLZWYCYZ_V3_0128",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.2.4 遗传漂移-85-86",
+          "chunk_title": "遗传漂移的微观产生机制及其与群体大小呈反比的关系"
+        },
+        {
+          "rank": 6,
+          "score": 0.26712922844825127,
+          "chunk_id": "M_YLZWYCYZ_V3_0016",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物的细胞学基础-1.1.2 细胞质和细胞器-9-9",
+          "chunk_title": "细胞质的组成及四大主要细胞器（线粒体、质体、核糖体、内质网）"
+        },
+        {
+          "rank": 7,
+          "score": 0.25798458713194494,
+          "chunk_id": "M_LMBLX_V3_0353",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.3.2.1 症状类型-64-64",
+          "chunk_title": "病毒侵染导致的内部生理变化及标志性结构“内含体（X体与结晶体）”特征"
+        },
+        {
+          "rank": 8,
+          "score": 0.25190829635718476,
+          "chunk_id": "M_YLZWYCYZ_V3_0132",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.3.1 定向选择-87-87",
+          "chunk_title": "栽培群体进化的快速性及人工定向选择的特殊性"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "隔离的概念是什么，常见的隔离类型有哪些？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0130"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5912005532803105,
+          "chunk_id": "M_YLZWYCYZ_V3_0130",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.2.6 隔离-86-86",
+          "chunk_title": "隔离的基础概念及其三大常见类型（地理、物候、生殖隔离）"
+        },
+        {
+          "rank": 2,
+          "score": 0.5470075571252945,
+          "chunk_id": "M_YLZWYCYZ_V3_0138",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.4.1 物种的概念-89-89",
+          "chunk_title": "地理隔离的概念及其与生殖隔离在遗传基础上的根本区别"
+        },
+        {
+          "rank": 3,
+          "score": 0.45690192915964184,
+          "chunk_id": "M_YLZWYCYZ_V3_0131",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.2.6 隔离-86-86",
+          "chunk_title": "隔离在群体遗传、物种进化及保持种性稳定中的双重意义"
+        },
+        {
+          "rank": 4,
+          "score": 0.44309275661320946,
+          "chunk_id": "M_YLZWYCYZ_V3_0136",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.4.1 物种的概念-88-88",
+          "chunk_title": "遗传学视角下的物种概念（生殖隔离与共同基因库）及动态分歧特征"
+        },
+        {
+          "rank": 5,
+          "score": 0.4286339162044167,
+          "chunk_id": "M_YLZWYCYZ_V3_0137",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.4.1 物种的概念-88-89",
+          "chunk_title": "生殖隔离机制（RIM）的两大类：合子前隔离与合子后隔离及其典型实例"
+        },
+        {
+          "rank": 6,
+          "score": 0.41983713478143003,
+          "chunk_id": "M_YLZWYCYZ_V3_0294",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.2.2 防止良种退化的方法-176-176",
+          "chunk_title": "防止生物学混杂的两大核心隔离法：空间隔离与时间隔离"
+        },
+        {
+          "rank": 7,
+          "score": 0.412763325912551,
+          "chunk_id": "M_YLZWYCYZ_V3_0135",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.3.2 积累变异-87-87",
+          "chunk_title": "栽培群体中基因迁移的频繁发生与人工打破三大隔离的进化意义"
+        },
+        {
+          "rank": 8,
+          "score": 0.3992613105422826,
+          "chunk_id": "M_YLZWYCYZ_V3_0139",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.4.2 物种形成的过程-89-89",
+          "chunk_title": "物种形成的第一阶段：基因交流阻断与合子后隔离（副产品）的产生"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "导致植物花部和叶部彩斑形成的微观原因有哪些？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0164"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.514316769248714,
+          "chunk_id": "M_YLZWYCYZ_V3_0164",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.3 不规则彩斑的遗传-103-103",
+          "chunk_title": "导致植物花部与叶部彩斑形成的六大微观原因总结"
+        },
+        {
+          "rank": 2,
+          "score": 0.47790146765664976,
+          "chunk_id": "M_YLZWYCYZ_V3_0159",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.1 彩斑的概念和分类-101-101",
+          "chunk_title": "叶片彩斑（花叶/变色叶与五大斑纹类型）、果实及茎干彩斑的分类与实例"
+        },
+        {
+          "rank": 3,
+          "score": 0.4477282616100631,
+          "chunk_id": "M_YLZWYCYZ_V3_0157",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.1 彩斑的概念和分类-100-101",
+          "chunk_title": "植物彩斑的概念定义及人工选择对其发生频率的影响"
+        },
+        {
+          "rank": 4,
+          "score": 0.44602460895611884,
+          "chunk_id": "M_YLZWYCYZ_V3_0158",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.1 彩斑的概念和分类-101-101",
+          "chunk_title": "花瓣彩斑的两大类：规则彩斑（花环、花眼等）与不规则彩斑（洒金、二乔等）"
+        },
+        {
+          "rank": 5,
+          "score": 0.42906070950584874,
+          "chunk_id": "M_YLZWYCYZ_V3_0161",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.2 规则彩斑的遗传-102-102",
+          "chunk_title": "花眼（花心）的遗传机制：藏报春（复等位基因）与棉花（基因连锁与交换）实例"
+        },
+        {
+          "rank": 6,
+          "score": 0.4256036618783636,
+          "chunk_id": "M_YLZWYCYZ_V3_0160",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.2 规则彩斑的遗传-102-102",
+          "chunk_title": "规则彩斑的遗传基础及三色堇花斑（受抑制基因控制）的遗传机制"
+        },
+        {
+          "rank": 7,
+          "score": 0.40966966418646944,
+          "chunk_id": "M_YLZWYCYZ_V3_0163",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.3 不规则彩斑的遗传-103-103",
+          "chunk_title": "病毒性彩斑的脱毒恢复特征及不规则彩斑的两大形态分类（区分彩斑与混杂彩斑）"
+        },
+        {
+          "rank": 8,
+          "score": 0.4009143353279147,
+          "chunk_id": "M_YLZWYCYZ_V3_0142",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.1 花色遗传的基础-92-93",
+          "chunk_title": "显花植物花色的进化机制及昆虫（如蜜蜂、蝴蝶）眼中的花色世界"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "什么是种质资源，它还有哪些别称？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0187"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.4491547701686472,
+          "chunk_id": "M_YLZWYCYZ_V3_0187",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.1 种质资源的概念-116-116",
+          "chunk_title": "种质资源（品种资源/基因资源）的概念与《种子法》法定范围"
+        },
+        {
+          "rank": 2,
+          "score": 0.42388442680806404,
+          "chunk_id": "M_YLZWYCYZ_V3_0193",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "种质资源的分类标准及本地种质资源的概念与优缺点"
+        },
+        {
+          "rank": 3,
+          "score": 0.39552082015282297,
+          "chunk_id": "M_YLZWYCYZ_V3_0196",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-120",
+          "chunk_title": "人工创造的种质资源的概念、形成方式及其综合性状优势"
+        },
+        {
+          "rank": 4,
+          "score": 0.39492022177500646,
+          "chunk_id": "M_YLZWYCYZ_V3_0194",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "外地种质资源的概念及其在丰富遗传多样性中的育种价值"
+        },
+        {
+          "rank": 5,
+          "score": 0.3814231225657407,
+          "chunk_id": "M_YLZWYCYZ_V3_0188",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.2 种质资源的意义和作用-116-117",
+          "chunk_title": "种质资源在园林植物育种与生产发展中的三大核心意义"
+        },
+        {
+          "rank": 6,
+          "score": 0.33301632581194535,
+          "chunk_id": "M_YLZWYCYZ_V3_0195",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "野生种质资源的概念、抗逆特性及其特有的育种价值"
+        },
+        {
+          "rank": 7,
+          "score": 0.3266958198847343,
+          "chunk_id": "M_YLZWYCYZ_V3_0204",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.3 种质资源的研究和利用-124-124",
+          "chunk_title": "种质资源的利用方式：直接选育、创造新种质与远缘杂交"
+        },
+        {
+          "rank": 8,
+          "score": 0.32388984570774765,
+          "chunk_id": "M_YLZWYCYZ_V3_0198",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-121-121",
+          "chunk_title": "种质资源保存的五大范围及就地（原地）保存法的两种形式"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "种质资源可以按哪些标准分类，本地种质资源指什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0193"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6491418767763255,
+          "chunk_id": "M_YLZWYCYZ_V3_0193",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "种质资源的分类标准及本地种质资源的概念与优缺点"
+        },
+        {
+          "rank": 2,
+          "score": 0.5944852970943119,
+          "chunk_id": "M_YLZWYCYZ_V3_0187",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.1 种质资源的概念-116-116",
+          "chunk_title": "种质资源（品种资源/基因资源）的概念与《种子法》法定范围"
+        },
+        {
+          "rank": 3,
+          "score": 0.5726948495324571,
+          "chunk_id": "M_YLZWYCYZ_V3_0194",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "外地种质资源的概念及其在丰富遗传多样性中的育种价值"
+        },
+        {
+          "rank": 4,
+          "score": 0.47283627661875943,
+          "chunk_id": "M_YLZWYCYZ_V3_0196",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-120",
+          "chunk_title": "人工创造的种质资源的概念、形成方式及其综合性状优势"
+        },
+        {
+          "rank": 5,
+          "score": 0.4479317345043048,
+          "chunk_id": "M_YLZWYCYZ_V3_0188",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.2 种质资源的意义和作用-116-117",
+          "chunk_title": "种质资源在园林植物育种与生产发展中的三大核心意义"
+        },
+        {
+          "rank": 6,
+          "score": 0.4354648431614539,
+          "chunk_id": "M_YLZWYCYZ_V3_0204",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.3 种质资源的研究和利用-124-124",
+          "chunk_title": "种质资源的利用方式：直接选育、创造新种质与远缘杂交"
+        },
+        {
+          "rank": 7,
+          "score": 0.4224033294169233,
+          "chunk_id": "M_YLZWYCYZ_V3_0198",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-121-121",
+          "chunk_title": "种质资源保存的五大范围及就地（原地）保存法的两种形式"
+        },
+        {
+          "rank": 8,
+          "score": 0.40153123928622736,
+          "chunk_id": "M_YLZWYCYZ_V3_0422",
+          "citation_anchor": "园林植物遗传育种（第3版）-花木育种-17.1.4 育种方法-223-223",
+          "chunk_title": "芍药属种质资源圃的建立及因地制宜的南北引种原则"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "植物种质资源保存的范围包括哪些，就地保存法有哪两种形式？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0198"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.685590645725453,
+          "chunk_id": "M_YLZWYCYZ_V3_0198",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-121-121",
+          "chunk_title": "种质资源保存的五大范围及就地（原地）保存法的两种形式"
+        },
+        {
+          "rank": 2,
+          "score": 0.5874001168108715,
+          "chunk_id": "M_YLZWYCYZ_V3_0199",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-121-121",
+          "chunk_title": "异地保存法的概念、管理原则及控制授粉（防生物学混杂）的要点"
+        },
+        {
+          "rank": 3,
+          "score": 0.5446842852930476,
+          "chunk_id": "M_YLZWYCYZ_V3_0201",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-122-123",
+          "chunk_title": "种子贮藏保存法的温湿度条件及我国长、中期作物种质库体系建设"
+        },
+        {
+          "rank": 4,
+          "score": 0.5043808908646469,
+          "chunk_id": "M_YLZWYCYZ_V3_0187",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.1 种质资源的概念-116-116",
+          "chunk_title": "种质资源（品种资源/基因资源）的概念与《种子法》法定范围"
+        },
+        {
+          "rank": 5,
+          "score": 0.49282081719098647,
+          "chunk_id": "M_YLZWYCYZ_V3_0200",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-122-122",
+          "chunk_title": "组织培养保存法的两种形式：反复继代培养与超低温冷冻（液氮）保存"
+        },
+        {
+          "rank": 6,
+          "score": 0.46927809280056065,
+          "chunk_id": "M_YLZWYCYZ_V3_0193",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "种质资源的分类标准及本地种质资源的概念与优缺点"
+        },
+        {
+          "rank": 7,
+          "score": 0.4401434775558018,
+          "chunk_id": "M_YLZWYCYZ_V3_0194",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "外地种质资源的概念及其在丰富遗传多样性中的育种价值"
+        },
+        {
+          "rank": 8,
+          "score": 0.4400089927756857,
+          "chunk_id": "M_YLZWYCYZ_V3_0188",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.2 种质资源的意义和作用-116-117",
+          "chunk_title": "种质资源在园林植物育种与生产发展中的三大核心意义"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "什么是植物引种驯化，简单引种和驯化引种有什么区别？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0205"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6472463966664206,
+          "chunk_id": "M_YLZWYCYZ_V3_0205",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.1 引种驯化的概念-125-125",
+          "chunk_title": "植物引种驯化的定义及简单引种与驯化引种的区别"
+        },
+        {
+          "rank": 2,
+          "score": 0.517876405706071,
+          "chunk_id": "M_YLZWYCYZ_V3_0422",
+          "citation_anchor": "园林植物遗传育种（第3版）-花木育种-17.1.4 育种方法-223-223",
+          "chunk_title": "芍药属种质资源圃的建立及因地制宜的南北引种原则"
+        },
+        {
+          "rank": 3,
+          "score": 0.4950730496480916,
+          "chunk_id": "M_YLZWYCYZ_V3_0442",
+          "citation_anchor": "园林植物遗传育种（第3版）-花木育种-17.4.4 育种技术-229-229",
+          "chunk_title": "中外野生杜鹃引种历史及昆明植物园的常绿杜鹃引种成果"
+        },
+        {
+          "rank": 4,
+          "score": 0.488624786854787,
+          "chunk_id": "M_YLZWYCYZ_V3_0206",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.2 引种驯化的意义-125-126",
+          "chunk_title": "植物引种驯化在丰富品种结构、提高经济效益及提供育种基因资源方面的三大意义"
+        },
+        {
+          "rank": 5,
+          "score": 0.4815915715528262,
+          "chunk_id": "M_YLZWYCYZ_V3_0207",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.3 我国引种驯化的概况-126-126",
+          "chunk_title": "我国自汉代以来的引种驯化历史及现代国内外植物引种（如悬铃木、桉树等）的丰硕成果"
+        },
+        {
+          "rank": 6,
+          "score": 0.474712508571387,
+          "chunk_id": "M_YLZWYCYZ_V3_0224",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.5 引种驯化应该注意的问题-132-133",
+          "chunk_title": "引种驯化应注意的三个问题（积极慎重原则、结合栽培技术与区分植物习性）"
+        },
+        {
+          "rank": 7,
+          "score": 0.46759760373916887,
+          "chunk_id": "M_YLZWYCYZ_V3_0365",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.5.3 育种方法-203-203",
+          "chunk_title": "国内外玉簪引种现状及本土野生资源的驯化开发潜力"
+        },
+        {
+          "rank": 8,
+          "score": 0.44050357470248513,
+          "chunk_id": "M_YLZWYCYZ_V3_0209",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.1 引种驯化的原理-127-127",
+          "chunk_title": "引种驯化原理：驯化理论（米丘林）的实生选育主张与遗传学视角的补充"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "气候相似论对植物引种成功的核心观点是什么，它有什么局限性？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0208"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5282144489420036,
+          "chunk_id": "M_YLZWYCYZ_V3_0208",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.1 引种驯化的原理-126-127",
+          "chunk_title": "引种驯化原理：气候相似论（迈依尔）的核心观点与局限性"
+        },
+        {
+          "rank": 2,
+          "score": 0.36131860669184057,
+          "chunk_id": "M_YLZWYCYZ_V3_0224",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.5 引种驯化应该注意的问题-132-133",
+          "chunk_title": "引种驯化应注意的三个问题（积极慎重原则、结合栽培技术与区分植物习性）"
+        },
+        {
+          "rank": 3,
+          "score": 0.34583267598825834,
+          "chunk_id": "M_YLZWYCYZ_V3_0211",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.2 影响引种驯化的因素-127-128",
+          "chunk_title": "温度（高温、低温、季节交替）对植物南引与北引的限制作用"
+        },
+        {
+          "rank": 4,
+          "score": 0.34232688268239975,
+          "chunk_id": "M_YLZWYCYZ_V3_0205",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.1 引种驯化的概念-125-125",
+          "chunk_title": "植物引种驯化的定义及简单引种与驯化引种的区别"
+        },
+        {
+          "rank": 5,
+          "score": 0.3388882577439997,
+          "chunk_id": "M_YLZWYCYZ_V3_0195",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "野生种质资源的概念、抗逆特性及其特有的育种价值"
+        },
+        {
+          "rank": 6,
+          "score": 0.3376940277801857,
+          "chunk_id": "M_YLZWYCYZ_V3_0207",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.3 我国引种驯化的概况-126-126",
+          "chunk_title": "我国自汉代以来的引种驯化历史及现代国内外植物引种（如悬铃木、桉树等）的丰硕成果"
+        },
+        {
+          "rank": 7,
+          "score": 0.33602568732300764,
+          "chunk_id": "M_YLZWYCYZ_V3_0213",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.2 影响引种驯化的因素-128-129",
+          "chunk_title": "降水与空气湿度（初春干热风与生理脱水）对引种成败的决定性作用"
+        },
+        {
+          "rank": 8,
+          "score": 0.33143896462417044,
+          "chunk_id": "M_YLZWYCYZ_V3_0221",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.3 引种驯化成功的标准-131-131",
+          "chunk_title": "判定引种驯化是否成功的三个核心标准（越冬越夏、品质保持与正常繁殖）"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "判定引种驯化成功的三个核心标准是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0221"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.4556711617342134,
+          "chunk_id": "M_YLZWYCYZ_V3_0221",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.3 引种驯化成功的标准-131-131",
+          "chunk_title": "判定引种驯化是否成功的三个核心标准（越冬越夏、品质保持与正常繁殖）"
+        },
+        {
+          "rank": 2,
+          "score": 0.3705133429178189,
+          "chunk_id": "M_YLZWYCYZ_V3_0205",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.1 引种驯化的概念-125-125",
+          "chunk_title": "植物引种驯化的定义及简单引种与驯化引种的区别"
+        },
+        {
+          "rank": 3,
+          "score": 0.3607455335027347,
+          "chunk_id": "M_YLZWYCYZ_V3_0209",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.1 引种驯化的原理-127-127",
+          "chunk_title": "引种驯化原理：驯化理论（米丘林）的实生选育主张与遗传学视角的补充"
+        },
+        {
+          "rank": 4,
+          "score": 0.35274862145917923,
+          "chunk_id": "M_YLZWYCYZ_V3_0051",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.3 蛋白质的合成-29-30",
+          "chunk_title": "参与蛋白质合成的三种主要RNA（mRNA、tRNA、rRNA）及核糖体"
+        },
+        {
+          "rank": 5,
+          "score": 0.3517701513050472,
+          "chunk_id": "M_YLZWYCYZ_V3_0208",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.1 引种驯化的原理-126-127",
+          "chunk_title": "引种驯化原理：气候相似论（迈依尔）的核心观点与局限性"
+        },
+        {
+          "rank": 6,
+          "score": 0.342070224780915,
+          "chunk_id": "M_YLZWYCYZ_V3_0206",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.2 引种驯化的意义-125-126",
+          "chunk_title": "植物引种驯化在丰富品种结构、提高经济效益及提供育种基因资源方面的三大意义"
+        },
+        {
+          "rank": 7,
+          "score": 0.3359355065735126,
+          "chunk_id": "M_YLZWYCYZ_V3_0442",
+          "citation_anchor": "园林植物遗传育种（第3版）-花木育种-17.4.4 育种技术-229-229",
+          "chunk_title": "中外野生杜鹃引种历史及昆明植物园的常绿杜鹃引种成果"
+        },
+        {
+          "rank": 8,
+          "score": 0.3312004564962115,
+          "chunk_id": "M_YLZWYCYZ_V3_0210",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.2.1 引种驯化的原理-127-127",
+          "chunk_title": "引种驯化原理：栽培植物起源中心理论（瓦维洛夫）及其在基因资源引种中的价值"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "选择育种指什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0225"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5353143160981575,
+          "chunk_id": "M_YLZWYCYZ_V3_0226",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.1.2 选择育种的意义-134-135",
+          "chunk_title": "选择育种的两大核心意义：直接创造新品种与简便速效（环境适应力强）"
+        },
+        {
+          "rank": 2,
+          "score": 0.5188682853025889,
+          "chunk_id": "M_YLZWYCYZ_V3_0329",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.1.4 育种方法-192-193",
+          "chunk_title": "菊花引种原则及选择育种（芽变选种与单株选择）的应用"
+        },
+        {
+          "rank": 3,
+          "score": 0.49255102912360943,
+          "chunk_id": "M_YLZWYCYZ_V3_0347",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.3.4 育种方法-198-198",
+          "chunk_title": "香石竹在国内的引种筛选现状及单株/芽变选择育种法"
+        },
+        {
+          "rank": 4,
+          "score": 0.47611721048095873,
+          "chunk_id": "M_YLZWYCYZ_V3_0338",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.2.4 育种方法-195-195",
+          "chunk_title": "兰花选择育种的现状及杂交育种中亲本优选与花粉采集技术"
+        },
+        {
+          "rank": 5,
+          "score": 0.4718259479733061,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 6,
+          "score": 0.44374065232522886,
+          "chunk_id": "M_YLZWYCYZ_V3_0225",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.1.1 选择育种的概念-134-134",
+          "chunk_title": "选择育种的概念定义与历史定向选择实例（如虞美人花色选育）"
+        },
+        {
+          "rank": 7,
+          "score": 0.4230726900006656,
+          "chunk_id": "M_YLZWYCYZ_V3_0227",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.1 混合选择法-135-135",
+          "chunk_title": "混合选择法（表现型选择法）的概念定义、田间实施要求及分类（一次与多次）"
+        },
+        {
+          "rank": 8,
+          "score": 0.4131526544180033,
+          "chunk_id": "M_YLZWYCYZ_V3_0412",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.5.4 育种技术-219-219",
+          "chunk_title": "唐菖蒲引种的适应性考核及基于四倍体特性的父母本选配"
+        }
+      ],
+      "first_relevant_rank": 6
+    },
+    {
+      "question": "混合选择法是什么，它在田间实施时有什么基本要求？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0227"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.41425857805424554,
+          "chunk_id": "M_YLZWYCYZ_V3_0227",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.1 混合选择法-135-135",
+          "chunk_title": "混合选择法（表现型选择法）的概念定义、田间实施要求及分类（一次与多次）"
+        },
+        {
+          "rank": 2,
+          "score": 0.31320524304932046,
+          "chunk_id": "M_YLZWYCYZ_V3_0228",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.1 混合选择法-135-136",
+          "chunk_title": "混合选择法的优缺点分析（操作简便 vs 系谱不清与表现型伪装）"
+        },
+        {
+          "rank": 3,
+          "score": 0.2943829602990417,
+          "chunk_id": "M_YLZWYCYZ_V3_0230",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.2 单株选择法-136-137",
+          "chunk_title": "单株选择法的优缺点分析（高选择效果与高成本/基因丢失的权衡）"
+        },
+        {
+          "rank": 4,
+          "score": 0.24806946917841696,
+          "chunk_id": "M_YLZWYCYZ_V3_0243",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.3 影响选择效果的因素-143-144",
+          "chunk_title": "直接/间接选择、性状数目（相关性）及环境一致性对选种评价的作用"
+        },
+        {
+          "rank": 5,
+          "score": 0.23213731687889796,
+          "chunk_id": "M_YLZWYCYZ_V3_0229",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.1 混合选择法-136-136",
+          "chunk_title": "混合选择法在自花授粉（纯合体）与异花授粉（杂合体）植物中的应用策略差异"
+        },
+        {
+          "rank": 6,
+          "score": 0.2258685102073935,
+          "chunk_id": "M_YLZWYCYZ_V3_0124",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.2.2 选择-84-85",
+          "chunk_title": "选择对显/隐性个体的淘汰作用及选择与突变的平衡关系"
+        },
+        {
+          "rank": 7,
+          "score": 0.22398715430175126,
+          "chunk_id": "M_YLZWYCYZ_V3_0072",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.2 自由组合规律及其应用-45-46",
+          "chunk_title": "独立分配规律在杂交育种及育种规模预测中的实际应用"
+        },
+        {
+          "rank": 8,
+          "score": 0.21152108826050095,
+          "chunk_id": "M_YLZWYCYZ_V3_0240",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.4 芽变选种-142-142",
+          "chunk_title": "芽变选种程序第二级：复选（高接鉴定圃与选种圃的要求）与决选的评审标准"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "杂交育种的概念是什么，可按哪些体系分类？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0244"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5750546327852952,
+          "chunk_id": "M_YLZWYCYZ_V3_0244",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.1.1 杂交育种的概念及分类-145-145",
+          "chunk_title": "杂交育种的概念及基于亲缘关系（近缘/远缘）和杂交效应（组合/优势）的两大分类体系"
+        },
+        {
+          "rank": 2,
+          "score": 0.4531607539089712,
+          "chunk_id": "M_YLZWYCYZ_V3_0279",
+          "citation_anchor": "园林植物遗传育种（第3版）-诱变及倍性育种-12.2.1 单倍体育种-167-167",
+          "chunk_title": "单倍体育种的概念定义及其在缩短年限与纯系培育中的四大意义"
+        },
+        {
+          "rank": 3,
+          "score": 0.4483696199423186,
+          "chunk_id": "M_YLZWYCYZ_V3_0245",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.1.2 杂交育种的意义-145-146",
+          "chunk_title": "杂交育种的三大意义：创造新品种（以现代月季为例）、加速生物进化与满足定向培育需求"
+        },
+        {
+          "rank": 4,
+          "score": 0.42440849262447294,
+          "chunk_id": "M_YLZWYCYZ_V3_0308",
+          "citation_anchor": "园林植物遗传育种（第3版）-一、二年生花卉育种-14.1.4 育种途径-185-185",
+          "chunk_title": "一串红杂交育种、远缘杂交及雄性不育利用途径"
+        },
+        {
+          "rank": 5,
+          "score": 0.42344048394913536,
+          "chunk_id": "M_YLZWYCYZ_V3_0134",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.3.2 积累变异-87-87",
+          "chunk_title": "栽培群体的小群体遗传漂变效应与高度非随机交配特征"
+        },
+        {
+          "rank": 6,
+          "score": 0.4214720058820484,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 7,
+          "score": 0.41242752456947884,
+          "chunk_id": "M_YLZWYCYZ_V3_0396",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.3.4 育种技术-214-215",
+          "chunk_title": "郁金香引种的三大核心问题及品种/品种群/种间杂交的潜力对比"
+        },
+        {
+          "rank": 8,
+          "score": 0.4068943614640565,
+          "chunk_id": "M_YLZWYCYZ_V3_0136",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.4.1 物种的概念-88-88",
+          "chunk_title": "遗传学视角下的物种概念（生殖隔离与共同基因库）及动态分歧特征"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "远缘杂交指什么，通常会遇到哪三类主要困难？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0260"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.3497591773519993,
+          "chunk_id": "M_YLZWYCYZ_V3_0260",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.4 远缘杂交育种-154-155",
+          "chunk_title": "远缘杂交的定义、特点及常见的三大困难（不亲和、不育、分离广泛）"
+        },
+        {
+          "rank": 2,
+          "score": 0.3000083541025621,
+          "chunk_id": "M_YLZWYCYZ_V3_0244",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.1.1 杂交育种的概念及分类-145-145",
+          "chunk_title": "杂交育种的概念及基于亲缘关系（近缘/远缘）和杂交效应（组合/优势）的两大分类体系"
+        },
+        {
+          "rank": 3,
+          "score": 0.2753751724240643,
+          "chunk_id": "M_YLZWYCYZ_V3_0246",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.2.1 杂交方式-146-147",
+          "chunk_title": "单杂交（正反交）与复合杂交（三交、双交、四交）的概念及排列逻辑"
+        },
+        {
+          "rank": 4,
+          "score": 0.25223266530042215,
+          "chunk_id": "M_YLZWYCYZ_V3_0374",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.6.3 育种方法-206-206",
+          "chunk_title": "鸢尾杂交免去雄操作及利用胚培养克服远缘杂交不育的方法"
+        },
+        {
+          "rank": 5,
+          "score": 0.21448846361130944,
+          "chunk_id": "M_YLZWYCYZ_V3_0308",
+          "citation_anchor": "园林植物遗传育种（第3版）-一、二年生花卉育种-14.1.4 育种途径-185-185",
+          "chunk_title": "一串红杂交育种、远缘杂交及雄性不育利用途径"
+        },
+        {
+          "rank": 6,
+          "score": 0.2130878115869166,
+          "chunk_id": "M_YLZWYCYZ_V3_0399",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.3.5 育种研究的发展趋势-215-216",
+          "chunk_title": "远缘杂交胚挽救、细胞工程生物技术普及与抗病/采后品质新目标"
+        },
+        {
+          "rank": 7,
+          "score": 0.20197531183034165,
+          "chunk_id": "M_YLZWYCYZ_V3_0245",
+          "citation_anchor": "园林植物遗传育种（第3版）-有性杂交育种-11.1.2 杂交育种的意义-145-146",
+          "chunk_title": "杂交育种的三大意义：创造新品种（以现代月季为例）、加速生物进化与满足定向培育需求"
+        },
+        {
+          "rank": 8,
+          "score": 0.18616926371924403,
+          "chunk_id": "M_YLZWYCYZ_V3_0396",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.3.4 育种技术-214-215",
+          "chunk_title": "郁金香引种的三大核心问题及品种/品种群/种间杂交的潜力对比"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "诱变育种可以分为哪两类，化学诱变育种有哪些技术特点？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0270"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6811040598843764,
+          "chunk_id": "M_YLZWYCYZ_V3_0270",
+          "citation_anchor": "园林植物遗传育种（第3版）-诱变及倍性育种-12.1 诱变育种-161-162",
+          "chunk_title": "诱变育种的概念定义及化学诱变育种的 5 大技术特点"
+        },
+        {
+          "rank": 2,
+          "score": 0.5307693522100886,
+          "chunk_id": "M_YLZWYCYZ_V3_0340",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.2.4 育种方法-196-196",
+          "chunk_title": "物理/化学诱变方法及转基因技术在兰花品质改良中的应用"
+        },
+        {
+          "rank": 3,
+          "score": 0.5082757387280261,
+          "chunk_id": "M_YLZWYCYZ_V3_0436",
+          "citation_anchor": "园林植物遗传育种（第3版）-花木育种-17.3.4 育种技术-227-228",
+          "chunk_title": "现代月季的高频芽变利用及辐射诱变与生物技术探索"
+        },
+        {
+          "rank": 4,
+          "score": 0.4916828153380476,
+          "chunk_id": "M_YLZWYCYZ_V3_0406",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.4.4 育种方法-217-217",
+          "chunk_title": "60Co辐射诱变的广泛形态改变与化学诱变诱发的“异色花边”"
+        },
+        {
+          "rank": 5,
+          "score": 0.45155071805336855,
+          "chunk_id": "M_YLZWYCYZ_V3_0414",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.5.4 育种技术-219-219",
+          "chunk_title": "唐菖蒲杂交种子的采收/播种节点及 60Co-γ 射线诱变"
+        },
+        {
+          "rank": 6,
+          "score": 0.44721359549995787,
+          "chunk_id": "M_YLZWYCYZ_V3_0357",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.4.3 育种方法-201-201",
+          "chunk_title": "物理辐射诱变机制及秋水仙素诱导萱草多倍体的显著优势"
+        },
+        {
+          "rank": 7,
+          "score": 0.4373571345011578,
+          "chunk_id": "M_YLZWYCYZ_V3_0116",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的变异-5.2.5 基因突变在育种上的应用-80-80",
+          "chunk_title": "诱发突变与自发突变的对比及人工诱变育种的实践成果"
+        },
+        {
+          "rank": 8,
+          "score": 0.43577711957443727,
+          "chunk_id": "M_YLZWYCYZ_V3_0274",
+          "citation_anchor": "园林植物遗传育种（第3版）-诱变及倍性育种-12.1.2 辐射育种-163-164",
+          "chunk_title": "辐射育种的技术优势（高突变率、育种快、克服远缘不育）及局限性"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "植物组织培养的定义和技术基础是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0301"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6601065314680791,
+          "chunk_id": "M_YLZWYCYZ_V3_0301",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.3.2 园林植物组织培养-179-179",
+          "chunk_title": "植物组织培养（Plant tissue culture）的定义与技术基础"
+        },
+        {
+          "rank": 2,
+          "score": 0.39373368742689474,
+          "chunk_id": "M_YLZWYCYZ_V3_0200",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-122-122",
+          "chunk_title": "组织培养保存法的两种形式：反复继代培养与超低温冷冻（液氮）保存"
+        },
+        {
+          "rank": 3,
+          "score": 0.38022882402009495,
+          "chunk_id": "M_YLZWYCYZ_V3_0417",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.5.5 良种繁育-220-220",
+          "chunk_title": "唐菖蒲外植体的优选（幼嫩花茎）及组培灭菌与培养参数"
+        },
+        {
+          "rank": 4,
+          "score": 0.3713053286162528,
+          "chunk_id": "M_YLZWYCYZ_V3_0302",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.3.2 园林植物组织培养-179-180",
+          "chunk_title": "组织培养在工厂化育苗与微茎尖脱毒中的作用"
+        },
+        {
+          "rank": 5,
+          "score": 0.3689589210983246,
+          "chunk_id": "M_YLZWYCYZ_V3_0057",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.1 基因工程的概念及原理-34-34",
+          "chunk_title": "基因工程的基础概念、原理特征及四大核心操作步骤"
+        },
+        {
+          "rank": 6,
+          "score": 0.35915545775305247,
+          "chunk_id": "M_YLZWYCYZ_V3_0178",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.4.1 株型的遗传-110-111",
+          "chunk_title": "生物技术修饰株型的三大途径（无性系变异、微生物基因、植物内源基因）及性状综合总结"
+        },
+        {
+          "rank": 7,
+          "score": 0.3560638833442332,
+          "chunk_id": "M_YLZWYCYZ_V3_0407",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.4.5 良种繁育-217-218",
+          "chunk_title": "仙客来球茎纵切繁育法及利用叶段等外植体的组培快繁参数"
+        },
+        {
+          "rank": 8,
+          "score": 0.35375901796632914,
+          "chunk_id": "M_LMBLX_V3_0282",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1.6 林木菌物病害的症状与诊断-50-50",
+          "chunk_title": "rDNA、ITS、RFLP等现代分子生物学技术在区分疑难菌物中的重要意义"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "当前 B002 园林植物遗传育种知识库是否记录了2026年中国各省花卉新品种审定的最新完整名录？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5219531085891556,
+          "chunk_id": "M_YLZWYCYZ_V3_0011",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-4-5",
+          "chunk_title": "新中国园林植物育种的发展成就与当前面临的挑战"
+        },
+        {
+          "rank": 2,
+          "score": 0.485344568221361,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 3,
+          "score": 0.4736001128566663,
+          "chunk_id": "M_YLZWYCYZ_V3_0010",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-4-4",
+          "chunk_title": "我国园林植物丰富的种质资源与古代育种历史"
+        },
+        {
+          "rank": 4,
+          "score": 0.4479604149371882,
+          "chunk_id": "M_YLZWYCYZ_V3_0012",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-5-5",
+          "chunk_title": "国外园林植物育种工作的发展动态与趋势"
+        },
+        {
+          "rank": 5,
+          "score": 0.4470913606655355,
+          "chunk_id": "M_YLZWYCYZ_V3_0189",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.3 我国园林植物种质资源的特点-117-117",
+          "chunk_title": "我国作为“世界园林之母”的历史地位及对世界名花（菊、梅、月季等）的引种贡献"
+        },
+        {
+          "rank": 6,
+          "score": 0.4330309259490398,
+          "chunk_id": "M_YLZWYCYZ_V3_0014",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-6-6",
+          "chunk_title": "良种繁育的作用与现代园林植物育种的发展趋势"
+        },
+        {
+          "rank": 7,
+          "score": 0.42702124073568953,
+          "chunk_id": "M_YLZWYCYZ_V3_0008",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.3 园林植物育种学的任务及作用-3-4",
+          "chunk_title": "园林植物育种学的基本任务与行业重要地位"
+        },
+        {
+          "rank": 8,
+          "score": 0.40841698356558315,
+          "chunk_id": "M_YLZWYCYZ_V3_0226",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.1.2 选择育种的意义-134-135",
+          "chunk_title": "选择育种的两大核心意义：直接创造新品种与简便速效（环境适应力强）"
+        }
+      ],
+      "rejected_by_threshold": false
+    },
+    {
+      "question": "根据当前 B002 知识库，能否直接判断一份未知园林植物样本的完整基因型？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.3190297456142981,
+          "chunk_id": "M_YLZWYCYZ_V3_0003",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-2-2",
+          "chunk_title": "遗传学的四大核心任务及园林植物遗传学的应用"
+        },
+        {
+          "rank": 2,
+          "score": 0.302260753516514,
+          "chunk_id": "M_YLZWYCYZ_V3_0008",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.3 园林植物育种学的任务及作用-3-4",
+          "chunk_title": "园林植物育种学的基本任务与行业重要地位"
+        },
+        {
+          "rank": 3,
+          "score": 0.2964285714285714,
+          "chunk_id": "M_YLZWYCYZ_V3_0054",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.4 基因对性状的控制-33-33",
+          "chunk_title": "基因的三大功能分类及其在个体发育中的选择性表达"
+        },
+        {
+          "rank": 4,
+          "score": 0.2911354736385209,
+          "chunk_id": "M_YLZWYCYZ_V3_0178",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.4.1 株型的遗传-110-111",
+          "chunk_title": "生物技术修饰株型的三大途径（无性系变异、微生物基因、植物内源基因）及性状综合总结"
+        },
+        {
+          "rank": 5,
+          "score": 0.2878937521030979,
+          "chunk_id": "M_YLZWYCYZ_V3_0076",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-47-47",
+          "chunk_title": "非等位基因间相互作用的基础概念（一因多效与多因一效）"
+        },
+        {
+          "rank": 6,
+          "score": 0.287528490204846,
+          "chunk_id": "M_YLZWYCYZ_V3_0119",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.1.2 基因频率和基因型频率-81-81",
+          "chunk_title": "基因频率与基因型频率的概念定义及紫茉莉花色计算实例"
+        },
+        {
+          "rank": 7,
+          "score": 0.2819432633756925,
+          "chunk_id": "M_LMBLX_V3_0488",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.2.3.3 植物传播-99-100",
+          "chunk_title": "树木自然根接因直径生长压力形成的机制及其在同种/异种间的发生频率差异"
+        },
+        {
+          "rank": 8,
+          "score": 0.28115643761367143,
+          "chunk_id": "M_YLZWYCYZ_V3_0062",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.4.2 基因工程研究进展-37-37",
+          "chunk_title": "基因工程在医药、农业及园林花卉中的研究与应用进展"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "当前 B002 知识库能否给出某企业尚未公开的月季新品种亲本组合和商业育种方案？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.41431335240284967,
+          "chunk_id": "M_YLZWYCYZ_V3_0226",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.1.2 选择育种的意义-134-135",
+          "chunk_title": "选择育种的两大核心意义：直接创造新品种与简便速效（环境适应力强）"
+        },
+        {
+          "rank": 2,
+          "score": 0.40501307012910914,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 3,
+          "score": 0.38524724993478254,
+          "chunk_id": "M_YLZWYCYZ_V3_0206",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.2 引种驯化的意义-125-126",
+          "chunk_title": "植物引种驯化在丰富品种结构、提高经济效益及提供育种基因资源方面的三大意义"
+        },
+        {
+          "rank": 4,
+          "score": 0.3741102274489449,
+          "chunk_id": "M_YLZWYCYZ_V3_0012",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-5-5",
+          "chunk_title": "国外园林植物育种工作的发展动态与趋势"
+        },
+        {
+          "rank": 5,
+          "score": 0.3739019010100743,
+          "chunk_id": "M_YLZWYCYZ_V3_0288",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.1.1 良种繁育的概念-173-173",
+          "chunk_title": "良种繁育（Seed production）的定义及其在种子工作中的地位"
+        },
+        {
+          "rank": 6,
+          "score": 0.36201425926705655,
+          "chunk_id": "M_YLZWYCYZ_V3_0396",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.3.4 育种技术-214-215",
+          "chunk_title": "郁金香引种的三大核心问题及品种/品种群/种间杂交的潜力对比"
+        },
+        {
+          "rank": 7,
+          "score": 0.34727259931574916,
+          "chunk_id": "M_YLZWYCYZ_V3_0289",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.1.2 良种繁育的任务-173-174",
+          "chunk_title": "良种繁育的主要任务：扩大数量、保持种性、防止退化与品种更新"
+        },
+        {
+          "rank": 8,
+          "score": 0.34373480438658494,
+          "chunk_id": "M_YLZWYCYZ_V3_0072",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.2 自由组合规律及其应用-45-46",
+          "chunk_title": "独立分配规律在杂交育种及育种规模预测中的实际应用"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "根据当前 B002 知识库，能否为某个具体苗圃制定本周精确的引种检疫和栽培管理方案？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.3466148351868847,
+          "chunk_id": "M_YLZWYCYZ_V3_0217",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.1 引种的程序-130-130",
+          "chunk_title": "引种程序中的核心安全环节：引种材料的检疫与隔离种植防范措施"
+        },
+        {
+          "rank": 2,
+          "score": 0.33288673905368515,
+          "chunk_id": "M_YLZWYCYZ_V3_0224",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.5 引种驯化应该注意的问题-132-133",
+          "chunk_title": "引种驯化应注意的三个问题（积极慎重原则、结合栽培技术与区分植物习性）"
+        },
+        {
+          "rank": 3,
+          "score": 0.3123601999617013,
+          "chunk_id": "M_YLZWYCYZ_V3_0222",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.4 引种栽培的技术措施-131-132",
+          "chunk_title": "引种栽培的技术措施（一）：播种期调整、种子特殊处理、栽培密度与肥水管理"
+        },
+        {
+          "rank": 4,
+          "score": 0.3005972789877101,
+          "chunk_id": "M_YLZWYCYZ_V3_0216",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.1 引种的程序-129-130",
+          "chunk_title": "引种程序的前期准备：确定引种目标与引种材料的搜集、编号及档案登记"
+        },
+        {
+          "rank": 5,
+          "score": 0.28354159945172014,
+          "chunk_id": "M_YLZWYCYZ_V3_0206",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.1.2 引种驯化的意义-125-126",
+          "chunk_title": "植物引种驯化在丰富品种结构、提高经济效益及提供育种基因资源方面的三大意义"
+        },
+        {
+          "rank": 6,
+          "score": 0.2771285483093309,
+          "chunk_id": "M_YLZWYCYZ_V3_0219",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.2 引种的方法-130-131",
+          "chunk_title": "引种试验的对照设置原则及早期筛选阶段：种源试验与品种比较试验"
+        },
+        {
+          "rank": 7,
+          "score": 0.27521599220345466,
+          "chunk_id": "M_YLZWYCYZ_V3_0135",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.3.2 积累变异-87-87",
+          "chunk_title": "栽培群体中基因迁移的频繁发生与人工打破三大隔离的进化意义"
+        },
+        {
+          "rank": 8,
+          "score": 0.2740510070322499,
+          "chunk_id": "M_YLZWYCYZ_V3_0012",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-5-5",
+          "chunk_title": "国外园林植物育种工作的发展动态与趋势"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "当前 B002 知识库是否包含2025年新版《种子法》全部条文及最新处罚标准？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.23779588191124051,
+          "chunk_id": "M_LMBLX_V3_0689",
+          "citation_anchor": "林木病理学（第3版）-林木种子和苗木病害及其防治-7.2.1 种实霉烂-144-144",
+          "chunk_title": "及时采收、干燥低温贮藏和消毒处理是防治关键"
+        },
+        {
+          "rank": 2,
+          "score": 0.22742602111082136,
+          "chunk_id": "M_LMBLX_V3_0679",
+          "citation_anchor": "林木病理学（第3版）-林木种子和苗木病害及其防治-7.1 种子和苗木病害概说-142-142",
+          "chunk_title": "种子病害主要表现为霉烂并与贮藏和催芽条件密切相关"
+        },
+        {
+          "rank": 3,
+          "score": 0.22266650946004302,
+          "chunk_id": "M_YLZWYCYZ_V3_0201",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-122-123",
+          "chunk_title": "种子贮藏保存法的温湿度条件及我国长、中期作物种质库体系建设"
+        },
+        {
+          "rank": 4,
+          "score": 0.2217537590500267,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 5,
+          "score": 0.21429865385363078,
+          "chunk_id": "M_LMBLX_V3_0372",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.4.2 列当属-68-68",
+          "chunk_title": "列当的根部全寄生属性及我国新疆/东北地区的典型危害种（大麻列当等）"
+        },
+        {
+          "rank": 6,
+          "score": 0.21169146890769774,
+          "chunk_id": "M_YLZWYCYZ_V3_0361",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.5.1 育种目标-202-202",
+          "chunk_title": "玉簪速生选育（克服成年期晚）、彩色斑块选育及抗蜗牛/蛞蝓育种"
+        },
+        {
+          "rank": 7,
+          "score": 0.2079309840251016,
+          "chunk_id": "M_YLZWYCYZ_V3_0288",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.1.1 良种繁育的概念-173-173",
+          "chunk_title": "良种繁育（Seed production）的定义及其在种子工作中的地位"
+        },
+        {
+          "rank": 8,
+          "score": 0.20694750282411223,
+          "chunk_id": "M_YLZWYCYZ_V3_0285",
+          "citation_anchor": "园林植物遗传育种（第3版）-诱变及倍性育种-12.2.2 多倍体育种-170-170",
+          "chunk_title": "秋水仙素处理的六种实操方法（浸渍、点滴、毛细管等）及注意事项"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "根据当前 B002 知识库，能否预测某地明年花卉市场最畅销的具体品种及价格？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.2914314579142,
+          "chunk_id": "M_YLZWYCYZ_V3_0419",
+          "citation_anchor": "园林植物遗传育种（第3版）-花木育种-17.1.2 育种目标-222-223",
+          "chunk_title": "全球牡丹芍药品种数量及在花色、花期与特殊应用上的突破方向"
+        },
+        {
+          "rank": 2,
+          "score": 0.28746218989645383,
+          "chunk_id": "M_YLZWYCYZ_V3_0216",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.1 引种的程序-129-130",
+          "chunk_title": "引种程序的前期准备：确定引种目标与引种材料的搜集、编号及档案登记"
+        },
+        {
+          "rank": 3,
+          "score": 0.2835522283748309,
+          "chunk_id": "M_YLZWYCYZ_V3_0428",
+          "citation_anchor": "园林植物遗传育种（第3版）-花木育种-17.2.3 育种方法及良种繁育-225-225",
+          "chunk_title": "占据主导的梅花实生选种及潜力巨大但占比极低的常规杂交育种"
+        },
+        {
+          "rank": 4,
+          "score": 0.27795785943122536,
+          "chunk_id": "M_YLZWYCYZ_V3_0325",
+          "citation_anchor": "园林植物遗传育种（第3版）-一、二年生花卉育种-14.3.4 育种进展-190-190",
+          "chunk_title": "全球三色堇育种历史、主要系列（瑞士大花、俄勒冈等）及我国研究现状"
+        },
+        {
+          "rank": 5,
+          "score": 0.2765415273789217,
+          "chunk_id": "M_YLZWYCYZ_V3_0219",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.2 引种的方法-130-131",
+          "chunk_title": "引种试验的对照设置原则及早期筛选阶段：种源试验与品种比较试验"
+        },
+        {
+          "rank": 6,
+          "score": 0.27546847956889253,
+          "chunk_id": "M_YLZWYCYZ_V3_0193",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "种质资源的分类标准及本地种质资源的概念与优缺点"
+        },
+        {
+          "rank": 7,
+          "score": 0.2722694001988832,
+          "chunk_id": "M_YLZWYCYZ_V3_0010",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-4-4",
+          "chunk_title": "我国园林植物丰富的种质资源与古代育种历史"
+        },
+        {
+          "rank": 8,
+          "score": 0.27105695344545117,
+          "chunk_id": "M_YLZWYCYZ_V3_0226",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.1.2 选择育种的意义-134-135",
+          "chunk_title": "选择育种的两大核心意义：直接创造新品种与简便速效（环境适应力强）"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "当前 B002 知识库能否确认一株转基因观赏植物是否符合当地最新释放审批要求？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.2671827164980917,
+          "chunk_id": "M_LMBLX_V3_0372",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.4.2 列当属-68-68",
+          "chunk_title": "列当的根部全寄生属性及我国新疆/东北地区的典型危害种（大麻列当等）"
+        },
+        {
+          "rank": 2,
+          "score": 0.25393208300523024,
+          "chunk_id": "M_LMBLX_V3_0559",
+          "citation_anchor": "林木病理学（第3版）-病原物的致病性和林木的抗病性-4.2.3 林木抗病性的遗传与变异-116-117",
+          "chunk_title": "Vanderplank 认为“感病基因”本质是植物必需生理功能基因而非为病原物特设的理论"
+        },
+        {
+          "rank": 3,
+          "score": 0.2524234441294362,
+          "chunk_id": "M_YLZWYCYZ_V3_0054",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.3.4 基因对性状的控制-33-33",
+          "chunk_title": "基因的三大功能分类及其在个体发育中的选择性表达"
+        },
+        {
+          "rank": 4,
+          "score": 0.25027356303560105,
+          "chunk_id": "M_YLZWYCYZ_V3_0178",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.4.1 株型的遗传-110-111",
+          "chunk_title": "生物技术修饰株型的三大途径（无性系变异、微生物基因、植物内源基因）及性状综合总结"
+        },
+        {
+          "rank": 5,
+          "score": 0.24326224884887007,
+          "chunk_id": "M_YLZWYCYZ_V3_0154",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.4 花色的遗传改良-99-100",
+          "chunk_title": "生物技术在花色改良中的背景及直接导入外源结构基因的原理"
+        },
+        {
+          "rank": 6,
+          "score": 0.23877440733286137,
+          "chunk_id": "M_YLZWYCYZ_V3_0156",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.4 花色的遗传改良-100-100",
+          "chunk_title": "导入调节基因活化内源基因及多基因综合调控在“蓝色月季”培育中的应用"
+        },
+        {
+          "rank": 7,
+          "score": 0.2326472959206337,
+          "chunk_id": "M_YLZWYCYZ_V3_0184",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.4.2 植物抗性的遗传-113-113",
+          "chunk_title": "抗虫基因工程的两大主流策略：苏云金杆菌（Bt）毒蛋白基因与蛋白酶抑制基因（CpTI）"
+        },
+        {
+          "rank": 8,
+          "score": 0.22825488617803671,
+          "chunk_id": "M_YLZWYCYZ_V3_0350",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.3.4 育种方法-199-199",
+          "chunk_title": "转基因技术在香石竹保鲜上的突破：反向导入乙烯合成酶基因"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "根据当前 B002 知识库，能否给出某一最新论文中CRISPR改良菊花花色的实验结果？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.37878532099347767,
+          "chunk_id": "M_YLZWYCYZ_V3_0141",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.1 花色遗传的基础-91-92",
+          "chunk_title": "花色的概念定义及花器官发育的分子遗传学本质"
+        },
+        {
+          "rank": 2,
+          "score": 0.3699339819892073,
+          "chunk_id": "M_YLZWYCYZ_V3_0142",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.1 花色遗传的基础-92-93",
+          "chunk_title": "显花植物花色的进化机制及昆虫（如蜜蜂、蝴蝶）眼中的花色世界"
+        },
+        {
+          "rank": 3,
+          "score": 0.36411254903864826,
+          "chunk_id": "M_YLZWYCYZ_V3_0145",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.1 花色遗传的基础-93-94",
+          "chunk_title": "花色与花色素的具体对应关系及变色花的形成机制"
+        },
+        {
+          "rank": 4,
+          "score": 0.35400040129002797,
+          "chunk_id": "M_YLZWYCYZ_V3_0143",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.1 花色遗传的基础-93-93",
+          "chunk_title": "花色遗传学的研究简史及现代基因工程在花色改良（如蓝色月季）中的应用"
+        },
+        {
+          "rank": 5,
+          "score": 0.3537543027405272,
+          "chunk_id": "M_YLZWYCYZ_V3_0153",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.4 花色的遗传改良-99-99",
+          "chunk_title": "花色遗传改良的常规途径：杂交育种、突变育种与辐射诱变"
+        },
+        {
+          "rank": 6,
+          "score": 0.34363161530503133,
+          "chunk_id": "M_YLZWYCYZ_V3_0151",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.3 花色遗传的实例-97-97",
+          "chunk_title": "花色遗传实例：大丽花（一）——色素混合规律与杂种起源的细胞学证据"
+        },
+        {
+          "rank": 7,
+          "score": 0.3417342084446531,
+          "chunk_id": "M_YLZWYCYZ_V3_0148",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.1.2 花色遗传-96-97",
+          "chunk_title": "白色花（气泡折射）与黑色花（表皮细胞阴影）的特殊物理光学结构机制"
+        },
+        {
+          "rank": 8,
+          "score": 0.340461610122328,
+          "chunk_id": "M_YLZWYCYZ_V3_0328",
+          "citation_anchor": "园林植物遗传育种（第3版）-宿根花卉育种-15.1.3 主要性状的遗传规律-192-192",
+          "chunk_title": "菊花花色、花期及数量性状（花径、株高等）的倾母遗传与超亲现象"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "当前 B002 知识库是否记录了今天某地温室内全部环境参数，并能据此调整组织培养配方？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.2394678731515827,
+          "chunk_id": "M_YLZWYCYZ_V3_0200",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.2 种质资源的保存-122-122",
+          "chunk_title": "组织培养保存法的两种形式：反复继代培养与超低温冷冻（液氮）保存"
+        },
+        {
+          "rank": 2,
+          "score": 0.228626358820306,
+          "chunk_id": "M_YLZWYCYZ_V3_0417",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.5.5 良种繁育-220-220",
+          "chunk_title": "唐菖蒲外植体的优选（幼嫩花茎）及组培灭菌与培养参数"
+        },
+        {
+          "rank": 3,
+          "score": 0.22342222751815657,
+          "chunk_id": "M_YLZWYCYZ_V3_0301",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.3.2 园林植物组织培养-179-179",
+          "chunk_title": "植物组织培养（Plant tissue culture）的定义与技术基础"
+        },
+        {
+          "rank": 4,
+          "score": 0.2089987813205938,
+          "chunk_id": "M_YLZWYCYZ_V3_0407",
+          "citation_anchor": "园林植物遗传育种（第3版）-球根花卉育种-16.4.5 良种繁育-217-218",
+          "chunk_title": "仙客来球茎纵切繁育法及利用叶段等外植体的组培快繁参数"
+        },
+        {
+          "rank": 5,
+          "score": 0.1939433513144187,
+          "chunk_id": "M_LMBLX_V3_0454",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.1.3.1 寄生关系的方式-91-91",
+          "chunk_title": "死体营养型（毒素/酶杀伤机制）及病原物寄生方式在真实环境中的动态过渡属性"
+        },
+        {
+          "rank": 6,
+          "score": 0.193291550814401,
+          "chunk_id": "M_LMBLX_V3_0034",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.2.2 组织上的病变-9-9",
+          "chunk_title": "促进性组织病变的概念界定与最常发生的组织部位"
+        },
+        {
+          "rank": 7,
+          "score": 0.18212716295580564,
+          "chunk_id": "M_LMBLX_V3_1121",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.1.3.2 根病病原菌的侵染-280-280",
+          "chunk_title": "蜜环菌通过根状菌索附着并逐步侵入根部内部组织"
+        },
+        {
+          "rank": 8,
+          "score": 0.18144368465060579,
+          "chunk_id": "M_YLZWYCYZ_V3_0302",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.3.2 园林植物组织培养-179-180",
+          "chunk_title": "组织培养在工厂化育苗与微茎尖脱毒中的作用"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "根据当前 B002 知识库，能否直接判定某个未提供亲本和田间记录的新品系是否具有稳定DUS特性？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.3265480086968545,
+          "chunk_id": "M_YLZWYCYZ_V3_0238",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.4 芽变选种-141-141",
+          "chunk_title": "芽变的直接鉴定法（细胞与分子水平）与间接鉴定法（无性繁殖对比）"
+        },
+        {
+          "rank": 2,
+          "score": 0.2795807122764419,
+          "chunk_id": "M_LMBLX_V3_0280",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1.6 林木菌物病害的症状与诊断-50-50",
+          "chunk_title": "菌物鉴定的形态特征基准及培养基质导致的形态不稳定现象"
+        },
+        {
+          "rank": 3,
+          "score": 0.2613404360052965,
+          "chunk_id": "M_YLZWYCYZ_V3_0167",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物主要观赏性状的遗传-7.2.4 嵌合体的遗传-104-105",
+          "chunk_title": "嵌合体的不稳定遗传性：无性繁殖的多样性与有性繁殖的内层决定论"
+        },
+        {
+          "rank": 4,
+          "score": 0.2566085007454372,
+          "chunk_id": "M_YLZWYCYZ_V3_0074",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.2.4 基因互作的遗传分析-46-47",
+          "chunk_title": "等位基因间的四种相互作用（完全/不完全/共/超显性）及环境对表现型的影响"
+        },
+        {
+          "rank": 5,
+          "score": 0.25639117400668676,
+          "chunk_id": "M_YLZWYCYZ_V3_0240",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.2.4 芽变选种-142-142",
+          "chunk_title": "芽变选种程序第二级：复选（高接鉴定圃与选种圃的要求）与决选的评审标准"
+        },
+        {
+          "rank": 6,
+          "score": 0.25257647610688166,
+          "chunk_id": "M_LMBLX_V3_0488",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.2.3.3 植物传播-99-100",
+          "chunk_title": "树木自然根接因直径生长压力形成的机制及其在同种/异种间的发生频率差异"
+        },
+        {
+          "rank": 7,
+          "score": 0.24973827193367357,
+          "chunk_id": "M_YLZWYCYZ_V3_0195",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.2 种质资源的分类-119-119",
+          "chunk_title": "野生种质资源的概念、抗逆特性及其特有的育种价值"
+        },
+        {
+          "rank": 8,
+          "score": 0.23742514852915544,
+          "chunk_id": "M_LMBLX_V3_0252",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1.5.7 无性型菌物及其所致病害-45-45",
+          "chunk_title": "无性型菌物基于形态特征的人为分类体系及其“形式（form）”分类单元前缀"
+        }
+      ],
+      "rejected_by_threshold": true
+    }
+  ]
+}

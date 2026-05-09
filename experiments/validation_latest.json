@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "summary": {
+    "total_records": 1748,
+    "book_counts": {
+      "园林植物遗传育种（第3版）": 457,
+      "林木病理学（第3版）": 1291
+    },
+    "topic_counts": {
+      "control_method": 155,
+      "definition": 375,
+      "diagnosis": 34,
+      "occurrence_rule": 332,
+      "pathogen": 263,
+      "summary": 381,
+      "symptom": 168,
+      "transmission": 40
+    },
+    "file_counts": {
+      "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B001_M_林木病理学\\B001_M_林木病理学_chunks_clean.jsonl": 1291,
+      "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B002_M_园林植物遗传育种\\B002_M_园林植物遗传育种_chunks_clean.jsonl": 457
+    },
+    "duplicate_chunk_id_count": 0,
+    "error_count": 0,
+    "warning_count": 1,
+    "required_fields": [
+      "chunk_id",
+      "book_title",
+      "chapter_title",
+      "section_title",
+      "page_start",
+      "page_end",
+      "chunk_title",
+      "topic_type",
+      "cleaned_text",
+      "keywords",
+      "citation_anchor"
+    ]
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "source_file": "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B001_M_林木病理学\\B001_M_林木病理学_chunks_clean.jsonl",
+      "line_number": 55,
+      "record_index": 54,
+      "chunk_id": "M_LMBLX_V3_0055",
+      "type": "very_short_cleaned_text",
+      "length": 14
+    }
+  ]
+}
