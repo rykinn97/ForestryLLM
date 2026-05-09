@@ -1,42 +1,41 @@
-# Trusted Forestry RAG: Evidence-Grounded Question Answering for Internal Forestry Knowledge Bases
+# 可信林业 RAG：面向内部林业知识库的证据约束问答
 
-> Draft status: scaffold only. Do not cite or submit before all TODO items are resolved with verified sources and actual experiment results.
+> 草稿状态：这里只是论文结构占位。所有“待补充”都必须用已核验文献和真实实验结果补齐后，才能投稿或引用。
 
-## Abstract
+## 摘要
 
-TODO: Write after the evaluation protocol and results are finalized. Do not invent performance numbers.
+待补充：等评测方案和实验结果确定后再写摘要。不要编造性能数字。
 
-## 1. Introduction
+## 1. 引言
 
-TODO: Motivate forestry knowledge access, citation-grounded QA, and refusal for insufficient evidence using verified references.
+待补充：用已核验参考文献说明林业知识获取、可追溯问答、证据不足拒答的研究意义。
 
-## 2. Materials and Methods
+## 2. 材料与方法
 
-### 2.1 Corpus
+### 2.1 语料
 
-The first-stage internal corpus contains two forestry textbooks converted into structured knowledge chunks. Reported corpus statistics must be generated from `forestryllm validate-corpus`.
+第一阶段内部语料由两本林业教材转换为结构化知识块。所有语料统计必须由 `python -m forestryllm validate-corpus` 生成，不要手工估计。
 
-### 2.2 Trusted RAG Pipeline
+### 2.2 可信 RAG 流程
 
-TODO: Describe chunk schema, embedding retrieval, evidence filtering, prompt constraints, citation construction, and refusal behavior.
+待补充：描述知识块字段、向量检索、证据过滤、提示词约束、引用构造和拒答机制。
 
-### 2.3 Evaluation
+### 2.3 评测
 
-TODO: Define answerable questions, unanswerable questions, gold evidence, citation hit, refusal accuracy, and human review protocol.
+待补充：定义可回答问题、不可回答问题、标准证据、引用命中率、拒答准确率和人工审核流程。
 
-## 3. Results
+## 3. 结果
 
-TODO: Insert only metrics exported from `paper/tables/`.
+待补充：只能填写从 `paper/tables/` 导出的真实指标。
 
-## 4. Discussion
+## 4. 讨论
 
-TODO: Discuss limitations: internal copyrighted corpus, draft evaluation set, domain coverage, model dependence, and human audit cost.
+待补充：讨论限制，包括内部版权语料、评测集规模、领域覆盖、模型依赖和人工审核成本。
 
-## 5. Conclusion
+## 5. 结论
 
-TODO: Write after final experiments.
+待补充：最终实验完成后再写。
 
-## References
+## 参考文献
 
-TODO: Add verified bibliography entries only. Do not add placeholder citations as real references.
-
+待补充：只加入已核验的参考文献，不要把占位引用当成真实引用。

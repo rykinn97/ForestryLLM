@@ -1,4 +1,11 @@
-# Paper Figures
+# 论文图
 
-Store generated figures here. Every figure must identify the script or notebook that produced it and the source experiment result.
+本目录保存论文图。
 
+每张图都必须能说明：
+
+- 由哪个脚本、交互式笔记本或命令生成。
+- 使用了哪个 `experiments/` 结果文件。
+- 图中数据是否来自真实实验输出。
+
+不要手工绘制无法追溯来源的实验结果图。

@@ -1,10 +1,12 @@
-# References
+# 参考文献
 
-Maintain verified bibliography material here. Do not add guessed DOI, pages, venues, or author lists.
+本目录用于维护已经核验过的参考文献材料。
 
-Recommended workflow:
+基本原则：
 
-1. Add a reference only after checking the original source.
-2. Record where the PDF/BibTeX came from.
-3. Mark uncertain entries as `TODO: verify` instead of treating them as cited literature.
+1. 只在核查原始来源后加入文献。
+2. 记录 PDF、BibTeX 或网页来源。
+3. 不猜 DOI、页码、期刊、会议或作者列表。
+4. 不确定的条目标记为“待核验”，不要当成已经引用的正式文献。
 
+SCI 论文中的每条引用都必须能回到可靠来源核验。

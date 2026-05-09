@@ -1,0 +1,42 @@
+{
+  "project_name": "ForestryLLM",
+  "corpus_version": "v0.2-expanded-corpus",
+  "collection_name": "forestry_kb",
+  "qdrant_path": "Forestry_KB/qdrant_data",
+  "embedding_model_path": "models/bge-m3",
+  "embedding_device": "cuda:0",
+  "generator": {
+    "provider": "ollama",
+    "url": "http://127.0.0.1:11434/api/chat",
+    "model": "qwen2.5:1.5b",
+    "timeout_seconds": 300
+  },
+  "retrieval": {
+    "top_k": 8,
+    "threshold": 0.68,
+    "lexical_smoke_threshold": 0.52,
+    "max_context_chunks": 3
+  },
+  "corpus_files": [
+    "Forestry_KB/exports_datas/B001_M_林木病理学/B001_M_林木病理学_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B002_M_园林植物遗传育种/B002_M_园林植物遗传育种_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B003_园林树木/B003_园林树木_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B004_园林树木学/B004_园林树木学_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B005_林木化学保护学/B005_林木化学保护学_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B006_树木学南方本/B006_树木学南方本_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B007_森林培育学/B007_森林培育学_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B008_森林昆虫学原理/B008_森林昆虫学原理_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B009_森林生态学/B009_森林生态学_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B010_经济林栽培学/B010_经济林栽培学_chunks_clean.jsonl"
+  ],
+  "allowed_topic_types": [
+    "definition",
+    "pathogen",
+    "symptom",
+    "occurrence_rule",
+    "transmission",
+    "diagnosis",
+    "control_method",
+    "summary"
+  ]
+}

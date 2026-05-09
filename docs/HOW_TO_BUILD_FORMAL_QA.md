@@ -152,7 +152,7 @@ SCI 论文更看重评测集是否严谨，而不是一开始数量很大。
 
 第二步，逐条打开对应的 `gold_chunk_ids`，到 CSV 或 JSONL 中核查证据是否确实支持题目。
 
-第三步，如果没问题，把 `reviewer` 从 `TODO: your name` 改成你的名字，把 `review_status` 仍先保持 `draft`。
+第三步，如果没问题，把 `reviewer` 从“待填写姓名”改成你的名字，把 `review_status` 仍先保持 `draft`。
 
 第四步，找导师或同门看。对方确认后，再把 `review_status` 改成 `reviewed`。
 

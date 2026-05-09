@@ -3,3 +3,7 @@ openpyxl>=3.1
 qdrant-client>=1.9
 requests>=2.31
 sentence-transformers>=2.7
+PyMuPDF>=1.24
+ebooklib>=0.18
+beautifulsoup4>=4.12
+lxml>=5.0

@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+from .book_ingestion import prepare_v02_book_drafts
 from .config import DEFAULT_CONFIG, load_config
 from .corpus import convert_excel_to_csv_jsonl, load_corpus, validate_records
 from .evaluation import evaluate_retrieval, read_qa, write_json
@@ -53,6 +54,17 @@ def main(argv: list[str] | None = None) -> None:
     export_parser = subparsers.add_parser("export-paper-tables", help="Export paper-ready metrics CSV from an evaluation JSON")
     export_parser.add_argument("--input", default="experiments/latest_evaluation.json")
     export_parser.add_argument("--output", default="paper/tables/latest_metrics.csv")
+
+    v02_parser = subparsers.add_parser("prepare-v02-book-drafts", help="Prepare draft chunks for books not yet in the corpus")
+    v02_parser.add_argument("--books-dir", default="books")
+    v02_parser.add_argument("--chunking-dir", default="Forestry_KB/chunking_datas")
+    v02_parser.add_argument("--exports-dir", default="Forestry_KB/exports_datas")
+    v02_parser.add_argument("--report", default="experiments/v02_book_ingestion_report.json")
+    v02_parser.add_argument(
+        "--update-config",
+        default=None,
+        help="Optional config JSON to update to v0.2 after draft files are generated, for example configs/project_config.json",
+    )
 
     args = parser.parse_args(argv)
     config = load_config(args.config)
@@ -117,6 +129,17 @@ def main(argv: list[str] | None = None) -> None:
     if args.command == "export-paper-tables":
         output = export_metrics_table(args.input, args.output)
         _emit({"output": str(output)}, None)
+        return
+
+    if args.command == "prepare-v02-book-drafts":
+        payload = prepare_v02_book_drafts(
+            args.books_dir,
+            args.chunking_dir,
+            args.exports_dir,
+            args.report,
+            config_path=args.update_config,
+        )
+        _emit(payload, None)
         return
 
 
