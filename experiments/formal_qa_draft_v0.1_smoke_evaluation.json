@@ -1,0 +1,813 @@
+{
+  "run_id": "20260509T045455Z",
+  "timestamp": "2026-05-09T04:54:55.579623+00:00",
+  "config": "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\configs\\project_config.json",
+  "corpus_version": "v0.1-two-books-internal",
+  "retriever": "lexical_cosine_smoke",
+  "generator": null,
+  "top_k": 8,
+  "threshold": 0.52,
+  "metrics": {
+    "answerable_cases": 10,
+    "unanswerable_cases": 2,
+    "recall_at_8": 1.0,
+    "mrr": 0.6625,
+    "ndcg": 0.7311493097868208,
+    "rejection_accuracy": 1.0,
+    "citation_hit_rate": 1.0,
+    "answer_support_rate": null,
+    "unsupported_generation_rate": null,
+    "notes": "answer_support_rate and unsupported_generation_rate require human or LLM-judge answer audits and are intentionally not inferred here."
+  },
+  "cases": [
+    {
+      "question": "林木病害指的是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_LMBLX_V3_0016",
+        "M_LMBLX_V3_0001"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5703384046396153,
+          "chunk_id": "M_LMBLX_V3_0017",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.1.1 林木病害-5-5",
+          "chunk_title": "林木病害与林木损伤的概念区分与病理程序特征"
+        },
+        {
+          "rank": 2,
+          "score": 0.5696549391872193,
+          "chunk_id": "M_LMBLX_V3_0068",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.4 林木病害诊断-13-13",
+          "chunk_title": "林木病害诊断（diagnosis）的基本定义"
+        },
+        {
+          "rank": 3,
+          "score": 0.5676743620374131,
+          "chunk_id": "M_LMBLX_V3_0004",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "林木病害的隐蔽性特征与森林损失占比"
+        },
+        {
+          "rank": 4,
+          "score": 0.5597866111041493,
+          "chunk_id": "M_LMBLX_V3_0005",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.2 林木病理学发展历史-2-2",
+          "chunk_title": "林木病理学学科的起源与奠基人"
+        },
+        {
+          "rank": 5,
+          "score": 0.5553006550807674,
+          "chunk_id": "M_LMBLX_V3_0568",
+          "citation_anchor": "林木病理学（第3版）-林木病害流行和预测-5.1 林木病害流行-120-120",
+          "chunk_title": "林木病害流行的“时空动态”属性及大面积流行病的经济/生态危害评估"
+        },
+        {
+          "rank": 6,
+          "score": 0.5485569988014368,
+          "chunk_id": "M_LMBLX_V3_0014",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.4 林木病理学与其他学科之间的关系-3-3",
+          "chunk_title": "林木病理学与森林病理学的概念边界与侧重点"
+        },
+        {
+          "rank": 7,
+          "score": 0.5472492096302023,
+          "chunk_id": "M_LMBLX_V3_0090",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.5 林木病害的分类-15-15",
+          "chunk_title": "依寄主发育阶段分类的具体阶段及其在经营管理中的应用"
+        },
+        {
+          "rank": 8,
+          "score": 0.5393741857917916,
+          "chunk_id": "M_LMBLX_V3_0001",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "林木病害的定义与灾害属性"
+        }
+      ],
+      "first_relevant_rank": 8
+    },
+    {
+      "question": "林木病害和林木损伤有什么区别？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_LMBLX_V3_0017"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6973558904128853,
+          "chunk_id": "M_LMBLX_V3_0017",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.1.1 林木病害-5-5",
+          "chunk_title": "林木病害与林木损伤的概念区分与病理程序特征"
+        },
+        {
+          "rank": 2,
+          "score": 0.5696951079673037,
+          "chunk_id": "M_LMBLX_V3_1271",
+          "citation_anchor": "林木病理学（第3版）-立木和木材腐朽-11.2.3 针阔叶树心材褐腐-307-307",
+          "chunk_title": "病害主要发生于原始林北龄林和老龄林，也常见于倒木、枯立木和伐桩"
+        },
+        {
+          "rank": 3,
+          "score": 0.5039526306789697,
+          "chunk_id": "M_LMBLX_V3_0090",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.5 林木病害的分类-15-15",
+          "chunk_title": "依寄主发育阶段分类的具体阶段及其在经营管理中的应用"
+        },
+        {
+          "rank": 4,
+          "score": 0.4833682445228319,
+          "chunk_id": "M_LMBLX_V3_0068",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.4 林木病害诊断-13-13",
+          "chunk_title": "林木病害诊断（diagnosis）的基本定义"
+        },
+        {
+          "rank": 5,
+          "score": 0.48168766908288246,
+          "chunk_id": "M_LMBLX_V3_0004",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "林木病害的隐蔽性特征与森林损失占比"
+        },
+        {
+          "rank": 6,
+          "score": 0.48079165556569947,
+          "chunk_id": "M_LMBLX_V3_0924",
+          "citation_anchor": "林木病理学（第3版）-林木叶部和果实病害-8.2.5 林木炭疽病类-210-210",
+          "chunk_title": "林木炭疽病的概述与危害"
+        },
+        {
+          "rank": 7,
+          "score": 0.4747980368692095,
+          "chunk_id": "M_LMBLX_V3_0001",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "林木病害的定义与灾害属性"
+        },
+        {
+          "rank": 8,
+          "score": 0.4633376173114799,
+          "chunk_id": "M_LMBLX_V3_0608",
+          "citation_anchor": "林木病理学（第3版）-林木病害防治-6.3.2 造林技术中的防病措施-131-131",
+          "chunk_title": "选用无病苗木对提高造林成活率及杜绝病原物引入幼林的重要作用"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "侵染性病害和非侵染性病害分别指什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_LMBLX_V3_0018"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6990021377678244,
+          "chunk_id": "M_LMBLX_V3_0018",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.1.1 林木病害-5-5",
+          "chunk_title": "侵染性病害与非侵染性病害的分类定义"
+        },
+        {
+          "rank": 2,
+          "score": 0.6498230620310665,
+          "chunk_id": "M_LMBLX_V3_1109",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.1.2 根部病害的症状及病原-279-279",
+          "chunk_title": "根部病害既有侵染性，也有非侵染性"
+        },
+        {
+          "rank": 3,
+          "score": 0.6045777387785387,
+          "chunk_id": "M_LMBLX_V3_0498",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.2.4 一年中侵染发生的次数（单循环病害和复循环病害）-102-102",
+          "chunk_title": "复循环病害的定义、初侵染与再侵染的核心概念区分及典型病原类群"
+        },
+        {
+          "rank": 4,
+          "score": 0.5858817654461621,
+          "chunk_id": "M_LMBLX_V3_0086",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.5 林木病害的分类-15-15",
+          "chunk_title": "依病原分类的具体类别体系及其说明规律的优点"
+        },
+        {
+          "rank": 5,
+          "score": 0.5686549226487286,
+          "chunk_id": "M_LMBLX_V3_0955",
+          "citation_anchor": "林木病理学（第3版）-林木枝干病害-9.1.2.1 枝干病害的症状和病原-222-223",
+          "chunk_title": "枝干病害的症状和病原概述"
+        },
+        {
+          "rank": 6,
+          "score": 0.5477225575051661,
+          "chunk_id": "M_LMBLX_V3_0457",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.1.3.3 局部侵染和系统侵染-92-92",
+          "chunk_title": "局部侵染的概念界定及其典型代表（叶斑病、溃疡病、根腐病等）"
+        },
+        {
+          "rank": 7,
+          "score": 0.5467760328109371,
+          "chunk_id": "M_LMBLX_V3_0439",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.1.2 侵入期-85-85",
+          "chunk_title": "侵入期作为病害发生关键阶段的地位及其受病原、寄主与环境综合影响的概述"
+        },
+        {
+          "rank": 8,
+          "score": 0.5416666666666666,
+          "chunk_id": "M_LMBLX_V3_0049",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.3.1 症状-10-10",
+          "chunk_title": "病征突出的病害类型与不表现病征的病害分类"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "林木病害中的病原是什么意思？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_LMBLX_V3_0019"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6177539459159318,
+          "chunk_id": "M_LMBLX_V3_0068",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.4 林木病害诊断-13-13",
+          "chunk_title": "林木病害诊断（diagnosis）的基本定义"
+        },
+        {
+          "rank": 2,
+          "score": 0.599844734845185,
+          "chunk_id": "M_LMBLX_V3_0608",
+          "citation_anchor": "林木病理学（第3版）-林木病害防治-6.3.2 造林技术中的防病措施-131-131",
+          "chunk_title": "选用无病苗木对提高造林成活率及杜绝病原物引入幼林的重要作用"
+        },
+        {
+          "rank": 3,
+          "score": 0.5970762747298235,
+          "chunk_id": "M_LMBLX_V3_0354",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.3.2.2 植物病毒病害的诊断-64-65",
+          "chunk_title": "病毒病害缺乏病征的特征及与生理病害（缺素症）的田间分布差异"
+        },
+        {
+          "rank": 4,
+          "score": 0.5933305523286182,
+          "chunk_id": "M_LMBLX_V3_0096",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.1 林木病原菌物-17-17",
+          "chunk_title": "植物及林木病原菌物的危害占比与世界著名病害案例"
+        },
+        {
+          "rank": 5,
+          "score": 0.5663777720944022,
+          "chunk_id": "M_LMBLX_V3_0954",
+          "citation_anchor": "林木病理学（第3版）-林木枝干病害-9.1.1 枝干病害的重要性-222-222",
+          "chunk_title": "枝干病害的重要性"
+        },
+        {
+          "rank": 6,
+          "score": 0.5652184950925788,
+          "chunk_id": "M_LMBLX_V3_0019",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.1.2 林木病害的病原-5-5",
+          "chunk_title": "病原的基本定义与病害发生因素的界定"
+        },
+        {
+          "rank": 7,
+          "score": 0.5614591947065168,
+          "chunk_id": "M_LMBLX_V3_0086",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.5 林木病害的分类-15-15",
+          "chunk_title": "依病原分类的具体类别体系及其说明规律的优点"
+        },
+        {
+          "rank": 8,
+          "score": 0.5552639397741003,
+          "chunk_id": "M_LMBLX_V3_0568",
+          "citation_anchor": "林木病理学（第3版）-林木病害流行和预测-5.1 林木病害流行-120-120",
+          "chunk_title": "林木病害流行的“时空动态”属性及大面积流行病的经济/生态危害评估"
+        }
+      ],
+      "first_relevant_rank": 6
+    },
+    {
+      "question": "植物侵染性病原主要包括哪些类别？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_LMBLX_V3_0020"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.49676967846959025,
+          "chunk_id": "M_LMBLX_V3_0434",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.1 植物侵染性病害的发生过程-84-84",
+          "chunk_title": "侵染性病害病程（侵染程序）的定义及植物病害体系（pathosystem）的构成概念"
+        },
+        {
+          "rank": 2,
+          "score": 0.468382853594994,
+          "chunk_id": "M_LMBLX_V3_0020",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.1.2 林木病害的病原-6-6",
+          "chunk_title": "侵染性病原（病原物）的主要类别及特征"
+        },
+        {
+          "rank": 3,
+          "score": 0.45933540141057166,
+          "chunk_id": "M_LMBLX_V3_0018",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.1.1 林木病害-5-5",
+          "chunk_title": "侵染性病害与非侵染性病害的分类定义"
+        },
+        {
+          "rank": 4,
+          "score": 0.45624912636203746,
+          "chunk_id": "M_LMBLX_V3_0439",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.1.2 侵入期-85-85",
+          "chunk_title": "侵入期作为病害发生关键阶段的地位及其受病原、寄主与环境综合影响的概述"
+        },
+        {
+          "rank": 5,
+          "score": 0.45407390955535226,
+          "chunk_id": "M_LMBLX_V3_0692",
+          "citation_anchor": "林木病理学（第3版）-林木种子和苗木病害及其防治-7.2.2 苗木猝倒病-145-146",
+          "chunk_title": "苗木猝倒病病因包括非侵染性因素和多类土壤习居性病原菌"
+        },
+        {
+          "rank": 6,
+          "score": 0.45047738580319086,
+          "chunk_id": "M_LMBLX_V3_0536",
+          "citation_anchor": "林木病理学（第3版）-病原物的致病性和林木的抗病性-4.2.1 抗病性的概念-111-111",
+          "chunk_title": "基于病原物侵入时间节点的被动抗病性（预存）与主动抗病性（诱发）划分及相对性"
+        },
+        {
+          "rank": 7,
+          "score": 0.4375997837317306,
+          "chunk_id": "M_LMBLX_V3_0473",
+          "citation_anchor": "林木病理学（第3版）-植物侵染性病害的发生过程和侵染循环-3.1.5.2 复合侵染-96-96",
+          "chunk_title": "复合侵染多发于兼性寄生物的生态规律及其对初始病原判定的干扰"
+        },
+        {
+          "rank": 8,
+          "score": 0.4366904847717353,
+          "chunk_id": "M_LMBLX_V3_0086",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.5 林木病害的分类-15-15",
+          "chunk_title": "依病原分类的具体类别体系及其说明规律的优点"
+        }
+      ],
+      "first_relevant_rank": 2
+    },
+    {
+      "question": "环境条件如何影响林木病害的发生和发展？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_LMBLX_V3_0023"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6385247285241586,
+          "chunk_id": "M_LMBLX_V3_0023",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.1.4 林木病害发生与环境的关系-7-7",
+          "chunk_title": "自然环境条件对病害发生发展的影响及缩叶病案例"
+        },
+        {
+          "rank": 2,
+          "score": 0.5769546882804291,
+          "chunk_id": "M_LMBLX_V3_1128",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.1.3.3 影响根病发生和流行的因素-281-281",
+          "chunk_title": "土壤环境同时影响病原物数量和树木生长，从而决定根病发生"
+        },
+        {
+          "rank": 3,
+          "score": 0.5538110256454809,
+          "chunk_id": "M_LMBLX_V3_0001",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "林木病害的定义与灾害属性"
+        },
+        {
+          "rank": 4,
+          "score": 0.5449432297443942,
+          "chunk_id": "M_LMBLX_V3_0006",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.2 林木病理学发展历史-2-2",
+          "chunk_title": "世界林木病理学的四个主要发展阶段"
+        },
+        {
+          "rank": 5,
+          "score": 0.5123592339946998,
+          "chunk_id": "M_LMBLX_V3_0004",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "林木病害的隐蔽性特征与森林损失占比"
+        },
+        {
+          "rank": 6,
+          "score": 0.5011912414941614,
+          "chunk_id": "M_LMBLX_V3_0568",
+          "citation_anchor": "林木病理学（第3版）-林木病害流行和预测-5.1 林木病害流行-120-120",
+          "chunk_title": "林木病害流行的“时空动态”属性及大面积流行病的经济/生态危害评估"
+        },
+        {
+          "rank": 7,
+          "score": 0.49961597536577124,
+          "chunk_id": "M_LMBLX_V3_1135",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.1.3.3 影响根病发生和流行的因素-281-281",
+          "chunk_title": "土壤养分通过影响树势和抗病力间接影响根病发生"
+        },
+        {
+          "rank": 8,
+          "score": 0.49497474683058323,
+          "chunk_id": "M_LMBLX_V3_0003",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "中国林木病害发生现状及典型高危病害"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "遗传学研究的对象是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0001"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5920586402617903,
+          "chunk_id": "M_YLZWYCYZ_V3_0001",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-1-1",
+          "chunk_title": "遗传学、遗传与变异的基础定义及研究对象"
+        },
+        {
+          "rank": 2,
+          "score": 0.474377556990023,
+          "chunk_id": "M_YLZWYCYZ_V3_0003",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-2-2",
+          "chunk_title": "遗传学的四大核心任务及园林植物遗传学的应用"
+        },
+        {
+          "rank": 3,
+          "score": 0.45140871685780815,
+          "chunk_id": "M_YLZWYCYZ_V3_0006",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "经典遗传学阶段：染色体理论与基因概念的确立"
+        },
+        {
+          "rank": 4,
+          "score": 0.43019924435401047,
+          "chunk_id": "M_LMBLX_V3_0009",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.3 林木病理学的主要研究内容-3-3",
+          "chunk_title": "林木病理学的研究对象与四大研究内容划分"
+        },
+        {
+          "rank": 5,
+          "score": 0.4240753971302962,
+          "chunk_id": "M_YLZWYCYZ_V3_0084",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-53-53",
+          "chunk_title": "细胞质遗传（核外遗传）的基础概念与别称"
+        },
+        {
+          "rank": 6,
+          "score": 0.42299459106121556,
+          "chunk_id": "M_YLZWYCYZ_V3_0202",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.3.3 种质资源的研究和利用-123-123",
+          "chunk_title": "种质资源系统研究的意义及传统表型/生物学研究的六大方面"
+        },
+        {
+          "rank": 7,
+          "score": 0.41473687647576146,
+          "chunk_id": "M_YLZWYCYZ_V3_0005",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-2-3",
+          "chunk_title": "遗传学的奠基阶段与孟德尔定律的重新发现"
+        },
+        {
+          "rank": 8,
+          "score": 0.3986164156954049,
+          "chunk_id": "M_YLZWYCYZ_V3_0004",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-2-2",
+          "chunk_title": "遗传学发展前期的进化与变异学说（拉马克、达尔文与魏斯曼）"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "遗传学研究的四大核心任务是什么？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0003"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.46475800154489005,
+          "chunk_id": "M_YLZWYCYZ_V3_0001",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-1-1",
+          "chunk_title": "遗传学、遗传与变异的基础定义及研究对象"
+        },
+        {
+          "rank": 2,
+          "score": 0.45402474879639415,
+          "chunk_id": "M_YLZWYCYZ_V3_0003",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.1 遗传学研究的对象和任务-2-2",
+          "chunk_title": "遗传学的四大核心任务及园林植物遗传学的应用"
+        },
+        {
+          "rank": 3,
+          "score": 0.3885774269680282,
+          "chunk_id": "M_YLZWYCYZ_V3_0084",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传的基本规律-3.4.1 细胞质遗传及其特点-53-53",
+          "chunk_title": "细胞质遗传（核外遗传）的基础概念与别称"
+        },
+        {
+          "rank": 4,
+          "score": 0.38001140955070023,
+          "chunk_id": "M_YLZWYCYZ_V3_0006",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "经典遗传学阶段：染色体理论与基因概念的确立"
+        },
+        {
+          "rank": 5,
+          "score": 0.37411040099482024,
+          "chunk_id": "M_YLZWYCYZ_V3_0007",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-3-3",
+          "chunk_title": "现代遗传学阶段：分子遗传学与基因工程的兴起"
+        },
+        {
+          "rank": 6,
+          "score": 0.3568881037826894,
+          "chunk_id": "M_YLZWYCYZ_V3_0118",
+          "citation_anchor": "园林植物遗传育种（第3版）-群体的遗传-6.1.1 理想群体-81-81",
+          "chunk_title": "群体遗传学的研究范畴与最终目的"
+        },
+        {
+          "rank": 7,
+          "score": 0.3564184629545839,
+          "chunk_id": "M_YLZWYCYZ_V3_0037",
+          "citation_anchor": "园林植物遗传育种（第3版）-遗传物质的分子基础-2.1 DNA是主要的遗传物质-21-21",
+          "chunk_title": "染色体的核心成分与遗传物质的疑问"
+        },
+        {
+          "rank": 8,
+          "score": 0.35515944248535114,
+          "chunk_id": "M_YLZWYCYZ_V3_0005",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.2 遗传学的发展-2-3",
+          "chunk_title": "遗传学的奠基阶段与孟德尔定律的重新发现"
+        }
+      ],
+      "first_relevant_rank": 2
+    },
+    {
+      "question": "园林植物的主要育种目标包括哪些方面？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0009"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5298767525120937,
+          "chunk_id": "M_YLZWYCYZ_V3_0011",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-4-5",
+          "chunk_title": "新中国园林植物育种的发展成就与当前面临的挑战"
+        },
+        {
+          "rank": 2,
+          "score": 0.5116407999333112,
+          "chunk_id": "M_YLZWYCYZ_V3_0008",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.3 园林植物育种学的任务及作用-3-4",
+          "chunk_title": "园林植物育种学的基本任务与行业重要地位"
+        },
+        {
+          "rank": 3,
+          "score": 0.49279129642094766,
+          "chunk_id": "M_YLZWYCYZ_V3_0009",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.3 园林植物育种学的任务及作用-4-4",
+          "chunk_title": "园林植物的主要育种目标（抗性、观赏性与经济性状）"
+        },
+        {
+          "rank": 4,
+          "score": 0.4912333054952682,
+          "chunk_id": "M_YLZWYCYZ_V3_0014",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-6-6",
+          "chunk_title": "良种繁育的作用与现代园林植物育种的发展趋势"
+        },
+        {
+          "rank": 5,
+          "score": 0.47119185515153583,
+          "chunk_id": "M_YLZWYCYZ_V3_0012",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-5-5",
+          "chunk_title": "国外园林植物育种工作的发展动态与趋势"
+        },
+        {
+          "rank": 6,
+          "score": 0.43369111611567873,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 7,
+          "score": 0.4161408456937281,
+          "chunk_id": "M_YLZWYCYZ_V3_0188",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物种质资源-8.1.2 种质资源的意义和作用-116-117",
+          "chunk_title": "种质资源在园林植物育种与生产发展中的三大核心意义"
+        },
+        {
+          "rank": 8,
+          "score": 0.4108781955584084,
+          "chunk_id": "M_YLZWYCYZ_V3_0224",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物引种-9.3.5 引种驯化应该注意的问题-132-133",
+          "chunk_title": "引种驯化应注意的三个问题（积极慎重原则、结合栽培技术与区分植物习性）"
+        }
+      ],
+      "first_relevant_rank": 3
+    },
+    {
+      "question": "园林植物新品种选育有哪些基本途径？",
+      "answerability": "answerable",
+      "gold_chunk_ids": [
+        "M_YLZWYCYZ_V3_0013"
+      ],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.6199497152208319,
+          "chunk_id": "M_YLZWYCYZ_V3_0013",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-5-6",
+          "chunk_title": "园林植物新品种选育的三大基本途径（引种、选择育种与人工创造）"
+        },
+        {
+          "rank": 2,
+          "score": 0.4643634602125721,
+          "chunk_id": "M_YLZWYCYZ_V3_0226",
+          "citation_anchor": "园林植物遗传育种（第3版）-选择育种-10.1.2 选择育种的意义-134-135",
+          "chunk_title": "选择育种的两大核心意义：直接创造新品种与简便速效（环境适应力强）"
+        },
+        {
+          "rank": 3,
+          "score": 0.4629907961147826,
+          "chunk_id": "M_YLZWYCYZ_V3_0011",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-4-5",
+          "chunk_title": "新中国园林植物育种的发展成就与当前面临的挑战"
+        },
+        {
+          "rank": 4,
+          "score": 0.4607699263724898,
+          "chunk_id": "M_YLZWYCYZ_V3_0008",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.3 园林植物育种学的任务及作用-3-4",
+          "chunk_title": "园林植物育种学的基本任务与行业重要地位"
+        },
+        {
+          "rank": 5,
+          "score": 0.4330639550973337,
+          "chunk_id": "M_YLZWYCYZ_V3_0014",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.5 园林植物育种工作的基本途径-6-6",
+          "chunk_title": "良种繁育的作用与现代园林植物育种的发展趋势"
+        },
+        {
+          "rank": 6,
+          "score": 0.42279789286903385,
+          "chunk_id": "M_YLZWYCYZ_V3_0012",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.4 国内外园林植物育种事业的发展-5-5",
+          "chunk_title": "国外园林植物育种工作的发展动态与趋势"
+        },
+        {
+          "rank": 7,
+          "score": 0.4099307283347235,
+          "chunk_id": "M_YLZWYCYZ_V3_0009",
+          "citation_anchor": "园林植物遗传育种（第3版）-绪论-0.3 园林植物育种学的任务及作用-4-4",
+          "chunk_title": "园林植物的主要育种目标（抗性、观赏性与经济性状）"
+        },
+        {
+          "rank": 8,
+          "score": 0.40238923748728156,
+          "chunk_id": "M_YLZWYCYZ_V3_0297",
+          "citation_anchor": "园林植物遗传育种（第3版）-园林植物良种繁育-13.3 园林植物良种繁育-177-177",
+          "chunk_title": "品种审定的评价维度及良种繁育程序的三个核心阶段"
+        }
+      ],
+      "first_relevant_rank": 1
+    },
+    {
+      "question": "当前知识库是否记录了2025年中国各省松材线虫病的最新发生面积？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.5019960159204453,
+          "chunk_id": "M_LMBLX_V3_0003",
+          "citation_anchor": "林木病理学（第3版）-绪论-0.1 林木病害发生现状及其对社会、经济和生态环境的影响-1-1",
+          "chunk_title": "中国林木病害发生现状及典型高危病害"
+        },
+        {
+          "rank": 2,
+          "score": 0.36521075055688046,
+          "chunk_id": "M_LMBLX_V3_0394",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.5.3.2 植物病原线虫的致病性-72-72",
+          "chunk_title": "粒线虫等5大主要属及林木上最关键的松材线虫与根结线虫危害特征"
+        },
+        {
+          "rank": 3,
+          "score": 0.3615654360597732,
+          "chunk_id": "M_LMBLX_V3_1043",
+          "citation_anchor": "林木病理学（第3版）-林木枝干病害-9.2.4.1 松材线虫枯萎病-254-254",
+          "chunk_title": "松材线虫枯萎病发生规律"
+        },
+        {
+          "rank": 4,
+          "score": 0.3596713078520329,
+          "chunk_id": "M_LMBLX_V3_0401",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.5.3.5 线虫的防治-73-73",
+          "chunk_title": "实施植物检疫以防止水稻茎线虫及松材线虫等危险性线虫传播蔓延"
+        },
+        {
+          "rank": 5,
+          "score": 0.35816765941328293,
+          "chunk_id": "M_LMBLX_V3_1040",
+          "citation_anchor": "林木病理学（第3版）-林木枝干病害-9.2.4.1 松材线虫枯萎病-252-252",
+          "chunk_title": "松材线虫枯萎病定义与危害"
+        },
+        {
+          "rank": 6,
+          "score": 0.34973490989351935,
+          "chunk_id": "M_LMBLX_V3_1042",
+          "citation_anchor": "林木病理学（第3版）-林木枝干病害-9.2.4.1 松材线虫枯萎病-253-254",
+          "chunk_title": "松材线虫枯萎病病原"
+        },
+        {
+          "rank": 7,
+          "score": 0.3440455593940656,
+          "chunk_id": "M_LMBLX_V3_0742",
+          "citation_anchor": "林木病理学（第3版）-林木叶部和果实病害-8.2.1.1 松落针病-158-158",
+          "chunk_title": "松落针病广泛分布并可严重影响松树生长"
+        },
+        {
+          "rank": 8,
+          "score": 0.32875684144302864,
+          "chunk_id": "M_LMBLX_V3_0379",
+          "citation_anchor": "林木病理学（第3版）-林木病害的病原-2.5 林木病原线虫-70-70",
+          "chunk_title": "线虫的动物学分类（线虫纲）、营寄生生活特征及其作为病原物的学科归属"
+        }
+      ],
+      "rejected_by_threshold": true
+    },
+    {
+      "question": "根据当前知识库，能否给出某一株未知病树的现场诊断结论和用药处方？",
+      "answerability": "unanswerable",
+      "gold_chunk_ids": [],
+      "retrieved": [
+        {
+          "rank": 1,
+          "score": 0.36196138299651337,
+          "chunk_id": "M_LMBLX_V3_0069",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.4.1 根据症状进行诊断-13-13",
+          "chunk_title": "症状作为病害初步诊断重要依据的原理及杨树黑斑病案例"
+        },
+        {
+          "rank": 2,
+          "score": 0.298720074624527,
+          "chunk_id": "M_LMBLX_V3_0074",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.4.2 根据病原物进行诊断-14-14",
+          "chunk_title": "病原物作为诊断依据的原理及真菌繁殖体的识别方法"
+        },
+        {
+          "rank": 3,
+          "score": 0.28213824634343926,
+          "chunk_id": "M_LMBLX_V3_0078",
+          "citation_anchor": "林木病理学（第3版）-林木病害基本概念-1.4.2 根据病原物进行诊断-14-14",
+          "chunk_title": "细菌病害与根结线虫病直接利用肉眼或显微镜诊断的可靠性"
+        },
+        {
+          "rank": 4,
+          "score": 0.2793304095636678,
+          "chunk_id": "M_LMBLX_V3_1105",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.1.1 根部病害的危害性及其特点-278-279",
+          "chunk_title": "根部病害通过破坏吸收与支撑功能导致整株衰弱或死亡"
+        },
+        {
+          "rank": 5,
+          "score": 0.27794028829682266,
+          "chunk_id": "M_LMBLX_V3_0638",
+          "citation_anchor": "林木病理学（第3版）-林木病害防治-6.6.1 化学药剂的作用和使用方法-135-135",
+          "chunk_title": "树干注射和外伤处理适用于部分枝干病害防治"
+        },
+        {
+          "rank": 6,
+          "score": 0.2724466012590988,
+          "chunk_id": "M_LMBLX_V3_1158",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.2.2 林木根朽病-286-287",
+          "chunk_title": "防治应以营林增强树势、彻底清根隔离和药剂或拮抗菌处理为主"
+        },
+        {
+          "rank": 7,
+          "score": 0.26971186543814996,
+          "chunk_id": "M_LMBLX_V3_1103",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.1.1 根部病害的危害性及其特点-278-278",
+          "chunk_title": "根部病害隐蔽性强，发现时往往已造成严重损害"
+        },
+        {
+          "rank": 8,
+          "score": 0.26935432350782246,
+          "chunk_id": "M_LMBLX_V3_1152",
+          "citation_anchor": "林木病理学（第3版）-林木根部病害-10.2.2 林木根朽病-285-285",
+          "chunk_title": "地上部症状与一般根茎病相似，但根部和干基部有较典型病征"
+        }
+      ],
+      "rejected_by_threshold": true
+    }
+  ]
+}

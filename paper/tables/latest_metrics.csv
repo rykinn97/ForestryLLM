@@ -1,0 +1,11 @@
+run_id,corpus_version,retriever,generator,top_k,threshold,metric,value
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,answerable_cases,3
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,unanswerable_cases,1
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,recall_at_8,1.0
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,mrr,0.5666666666666667
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,ndcg,0.6725941869353331
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,rejection_accuracy,1.0
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,citation_hit_rate,1.0
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,answer_support_rate,
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,unsupported_generation_rate,
+20260508T091204Z,v0.1-two-books-internal,lexical_cosine_smoke,,8,0.52,notes,answer_support_rate and unsupported_generation_rate require human or LLM-judge answer audits and are intentionally not inferred here.

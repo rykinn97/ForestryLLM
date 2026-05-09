@@ -1,0 +1,4 @@
+item_type,item_id,source,issue,status,owner,notes
+corpus_chunk,M_LMBLX_V3_0055,Forestry_KB/exports_datas/B001_M_林木病理学/B001_M_林木病理学_chunks_clean.jsonl,very_short_cleaned_text length=14,closed,user,2026-05-09 user checked source and confirmed no problem; keep chunk unchanged.
+evaluation_set,evaluation/smoke_qa.jsonl,evaluation/smoke_qa.jsonl,all smoke samples are draft and not expert-reviewed,open,TODO,Do not use as formal paper benchmark.
+evaluation_set,evaluation/formal_qa_draft_v0.1.jsonl,evaluation/formal_qa_draft_v0.1.jsonl,12 candidate QA items are draft and need human/domain review,open,user,Use docs/HOW_TO_BUILD_FORMAL_QA.md to review before marking any item reviewed.
