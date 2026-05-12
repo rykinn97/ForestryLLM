@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "summary": {
+    "total_records": 2571,
+    "book_counts": {
+      "园林树木学": 362,
+      "园林树木栽培学": 461,
+      "园林植物遗传育种（第3版）": 457,
+      "林木病理学（第3版）": 1291
+    },
+    "topic_counts": {
+      "control_method": 239,
+      "definition": 448,
+      "diagnosis": 35,
+      "occurrence_rule": 339,
+      "pathogen": 264,
+      "summary": 1032,
+      "symptom": 174,
+      "transmission": 40
+    },
+    "file_counts": {
+      "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B001_M_林木病理学\\B001_M_林木病理学_chunks_clean.jsonl": 1291,
+      "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B002_M_园林植物遗传育种\\B002_M_园林植物遗传育种_chunks_clean.jsonl": 457,
+      "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B003_M_园林树木学\\B003_M_园林树木学_chunks_clean.jsonl": 362,
+      "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B004_M_园林树木栽培学\\B004_M_园林树木栽培学_chunks_clean.jsonl": 461
+    },
+    "duplicate_chunk_id_count": 0,
+    "error_count": 0,
+    "warning_count": 1,
+    "required_fields": [
+      "chunk_id",
+      "book_title",
+      "chapter_title",
+      "section_title",
+      "page_start",
+      "page_end",
+      "chunk_title",
+      "topic_type",
+      "cleaned_text",
+      "keywords",
+      "citation_anchor"
+    ]
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "source_file": "D:\\.projects\\Lyu\\LLM about Forests\\ForestryLLM\\Forestry_KB\\exports_datas\\B001_M_林木病理学\\B001_M_林木病理学_chunks_clean.jsonl",
+      "line_number": 55,
+      "record_index": 54,
+      "chunk_id": "M_LMBLX_V3_0055",
+      "type": "very_short_cleaned_text",
+      "length": 14
+    }
+  ]
+}
