@@ -18,13 +18,6 @@ DEFAULT_EXISTING_CORPUS_FILES = [
 BOOKS_TO_ADD = [
     {
         "book_id": "B003",
-        "short_name": "园林树木",
-        "title": "园林树木",
-        "source_hint": "园林树木 (何会流 主编)",
-        "chunk_prefix": "M_YLSM_V1",
-    },
-    {
-        "book_id": "B004",
         "short_name": "园林树木学",
         "title": "园林树木学",
         "source_hint": "园林树木学",
@@ -115,6 +108,7 @@ def prepare_v02_book_drafts(
     exports_dir: str | Path = "Forestry_KB/exports_datas",
     report_path: str | Path = "experiments/v02_book_ingestion_report.json",
     config_path: str | Path | None = None,
+    only_books: Iterable[str] | None = None,
 ) -> dict[str, Any]:
     books_root = resolve_path(books_dir)
     chunking_root = resolve_path(chunking_dir)
@@ -126,17 +120,19 @@ def prepare_v02_book_drafts(
 
     outputs = []
     all_new_records: list[dict[str, Any]] = []
-    for spec in BOOKS_TO_ADD:
+    specs = _select_book_specs(BOOKS_TO_ADD, only_books)
+    for spec in specs:
         source = _find_source_file(books_root, spec["source_hint"])
         pages = _extract_pages(source)
         records = _records_from_pages(spec, source, pages)
         all_new_records.extend(records)
 
-        workbook_path = chunking_root / f'{spec["book_id"]}_{spec["short_name"]}_切块工作版.xlsx'
-        export_dir = exports_root / f'{spec["book_id"]}_{spec["short_name"]}'
+        output_stem = _book_output_stem(spec)
+        workbook_path = chunking_root / f"{output_stem}_切块工作版.xlsx"
+        export_dir = exports_root / output_stem
         export_dir.mkdir(parents=True, exist_ok=True)
-        csv_path = export_dir / f'{spec["book_id"]}_{spec["short_name"]}_chunks_clean.csv'
-        jsonl_path = export_dir / f'{spec["book_id"]}_{spec["short_name"]}_chunks_clean.jsonl'
+        csv_path = export_dir / f"{output_stem}_chunks_clean.csv"
+        jsonl_path = export_dir / f"{output_stem}_chunks_clean.jsonl"
 
         _write_workbook(workbook_path, records)
         _write_csv(csv_path, records)
@@ -197,12 +193,45 @@ def _find_source_file(books_root: Path, source_hint: str) -> Path:
     return candidates[0]
 
 
+def _book_output_stem(spec: dict[str, str]) -> str:
+    return f'{spec["book_id"]}_M_{spec["short_name"]}'
+
+
+def _select_book_specs(
+    specs: list[dict[str, str]], only_books: Iterable[str] | None
+) -> list[dict[str, str]]:
+    if only_books is None:
+        return specs
+    selectors = {_normalize_selector(selector) for selector in only_books if selector}
+    if not selectors:
+        return specs
+    selected = [
+        spec for spec in specs
+        if {
+            _normalize_selector(spec["book_id"]),
+            _normalize_selector(spec["short_name"]),
+            _normalize_selector(spec["title"]),
+            _normalize_selector(f'{spec["book_id"]}_{spec["short_name"]}'),
+            _normalize_selector(f'{spec["book_id"]}_M_{spec["short_name"]}'),
+        } & selectors
+    ]
+    if not selected:
+        raise ValueError(f"No v0.2 book spec matched selectors: {sorted(selectors)}")
+    return selected
+
+
+def _normalize_selector(value: str) -> str:
+    return re.sub(r"[\s_\-（）()]+", "", value).lower()
+
+
 def _extract_pages(source: Path) -> list[PageText]:
     suffix = source.suffix.lower()
     if suffix == ".pdf":
         return _extract_pdf_pages(source)
     if suffix == ".epub":
         return _extract_epub_pages(source)
+    if suffix == ".json":
+        return _extract_ocr_json_pages(source)
     raise ValueError(f"Unsupported book format: {source}")
 
 
@@ -234,6 +263,50 @@ def _extract_epub_pages(source: Path) -> list[PageText]:
         pages.append(PageText(page=page_number, text=text))
         page_number += 1
     return pages
+
+
+def _extract_ocr_json_pages(source: Path) -> list[PageText]:
+    with source.open("r", encoding="utf-8") as f:
+        payload = json.load(f)
+    if not isinstance(payload, list):
+        raise ValueError(f"Unsupported OCR JSON structure: {source}")
+
+    pages: list[PageText] = []
+    for page_number, page_payload in enumerate(payload, 1):
+        page_result = page_payload.get("prunedResult", page_payload)
+        rec_texts = page_result.get("rec_texts") or []
+        rec_boxes = page_result.get("rec_boxes") or []
+        lines = _ordered_ocr_lines(rec_texts, rec_boxes)
+        if _looks_like_toc_page(page_number, lines):
+            continue
+        text = _clean_text("\n".join(lines))
+        if text:
+            pages.append(PageText(page=page_number, text=text))
+    return pages
+
+
+def _ordered_ocr_lines(rec_texts: list[Any], rec_boxes: list[Any]) -> list[str]:
+    rows: list[tuple[int, int, int, str]] = []
+    for index, raw_text in enumerate(rec_texts):
+        text = _clean_text(str(raw_text))
+        if not text:
+            continue
+        box = rec_boxes[index] if index < len(rec_boxes) else None
+        if isinstance(box, list) and len(box) >= 4:
+            x_position = _safe_int(box[0], default=0)
+            y_position = _safe_int(box[1], default=index)
+        else:
+            x_position = 0
+            y_position = index
+        rows.append((y_position, x_position, index, text))
+    return [text for _, _, _, text in sorted(rows)]
+
+
+def _looks_like_toc_page(page_number: int, lines: list[str]) -> bool:
+    if page_number > 5:
+        return False
+    page_start = "\n".join(lines[:12])
+    return "目录" in page_start
 
 
 def _records_from_pages(spec: dict[str, str], source: Path, pages: Iterable[PageText]) -> list[dict[str, Any]]:
@@ -282,8 +355,44 @@ def _records_from_pages(spec: dict[str, str], source: Path, pages: Iterable[Page
 
 
 def _split_page_text(text: str) -> list[str]:
+    lines = [_clean_text(line) for line in text.splitlines()]
+    lines = [line for line in lines if line]
+    if len(lines) > 3:
+        return _merge_ocr_lines_into_paragraphs(lines)
     parts = re.split(r"\n{2,}|(?<=[。！？；])\s+", text)
     return [_clean_text(part) for part in parts if _clean_text(part)]
+
+
+def _merge_ocr_lines_into_paragraphs(lines: list[str]) -> list[str]:
+    parts: list[str] = []
+    current: list[str] = []
+
+    def flush_current() -> None:
+        if current:
+            paragraph = _clean_text("".join(current))
+            if paragraph:
+                parts.append(paragraph)
+            current.clear()
+
+    for line in lines:
+        if _looks_like_page_marker(line):
+            continue
+        if _heading_from_text(line):
+            flush_current()
+            parts.append(line)
+            continue
+        current.append(line)
+        if len("".join(current)) >= 120 and re.search(r"[。！？；]$", line):
+            flush_current()
+    flush_current()
+    return parts
+
+
+def _looks_like_page_marker(line: str) -> bool:
+    normalized = line.strip(" .·\t")
+    if normalized.isdigit():
+        return True
+    return bool(re.match(r"^[.·]?\d+[.·]?$", line.strip()))
 
 
 def _split_long_paragraph(text: str, max_chars: int = 850) -> list[str]:
@@ -376,6 +485,13 @@ def _make_keywords(text: str, title: str) -> str:
         if len(seen) >= 8:
             break
     return ";".join(seen[:8]) if seen else title
+
+
+def _safe_int(value: Any, default: int) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
 
 
 def _clean_text(text: str) -> str:

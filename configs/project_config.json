@@ -1,6 +1,6 @@
 {
   "project_name": "ForestryLLM",
-  "corpus_version": "v0.1-two-books-internal",
+  "corpus_version": "v0.2-expanded-corpus",
   "collection_name": "forestry_kb",
   "qdrant_path": "Forestry_KB/qdrant_data",
   "embedding_model_path": "models/bge-m3",
@@ -19,7 +19,8 @@
   },
   "corpus_files": [
     "Forestry_KB/exports_datas/B001_M_林木病理学/B001_M_林木病理学_chunks_clean.jsonl",
-    "Forestry_KB/exports_datas/B002_M_园林植物遗传育种/B002_M_园林植物遗传育种_chunks_clean.jsonl"
+    "Forestry_KB/exports_datas/B002_M_园林植物遗传育种/B002_M_园林植物遗传育种_chunks_clean.jsonl",
+    "Forestry_KB/exports_datas/B003_M_园林树木学/B003_M_园林树木学_chunks_clean.jsonl"
   ],
   "allowed_topic_types": [
     "definition",

@@ -61,6 +61,12 @@ def main(argv: list[str] | None = None) -> None:
     v02_parser.add_argument("--exports-dir", default="Forestry_KB/exports_datas")
     v02_parser.add_argument("--report", default="experiments/v02_book_ingestion_report.json")
     v02_parser.add_argument(
+        "--only-book",
+        action="append",
+        default=None,
+        help="Limit draft generation to one book. Can be used multiple times; accepts book id or short name.",
+    )
+    v02_parser.add_argument(
         "--update-config",
         default=None,
         help="Optional config JSON to update to v0.2 after draft files are generated, for example configs/project_config.json",
@@ -138,6 +144,7 @@ def main(argv: list[str] | None = None) -> None:
             args.exports_dir,
             args.report,
             config_path=args.update_config,
+            only_books=args.only_book,
         )
         _emit(payload, None)
         return
